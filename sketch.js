@@ -23,35 +23,41 @@ function setup() {
 
 (function animate() {
   str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
-  running = setTimeout(animate, 50);
-  if( running > 470 ) {
-    running1 = setTimeout(animate1, 50);
-  } else if( running == 470 ) {
+  running = setTimeout(animate, 35);
+  if( running > 450 ) {
+    running1 = setTimeout(animate1, 35);
+    let listaProgetti = document.getElementById("listaProgetti");
+    listaProgetti.style.display = "block";
+
+    if( skippato == false ) {
+    listaProgetti.classList.add('fade'); // attiva l'animazione
+    }
+  } else if( running == 450 ) {
     timer = millis();
   }
 })();
 
 function animate1() {
-  if ( n == 1 || n == 2 ) {
-    dTempo = 2500;
+//   if ( n == 1 || n == 2 ) {
+//     dTempo = 2500;
     document.getElementById("str").style.display = "none";
     document.getElementById("testoItalics").style.display = "block";
-  } else if ( n == 5 || n == 6) {
-    dTempo = 1600;
-  } else if (n == 0 || n == 3 || n == 4 || n == 7) {
-    dTempo = 950;
-  } 
+//   } else if ( n == 5 || n == 6) {
+//     dTempo = 1600;
+//   } else if (n == 0 || n == 3 || n == 4 || n == 7) {
+//     dTempo = 950;
+//   } 
 
-  if( n < 8 ) {
-   str1.length > 0 ? el1[n].innerHTML += str1.shift() : clearTimeout(running1);
-    if(millis() - timer > dTempo) {
-      n++;
-      str1 = string1[n].split("");
-      timer = millis();
-    }
-  } else if ( n == 8 ){
-    let listaProgetti = document.getElementById("listaProgetti");
-    listaProgetti.style.display = "block";
+  // if( n < 2 ) {
+  // //  str1.length > 0 ? el1[n].innerHTML += str1.shift() : clearTimeout(running1);
+  //   if(millis() - timer > dTempo) {
+  //     n++;
+  //     str1 = string1[n].split("");
+  //     timer = millis();
+  //   }
+  // } else if ( n == 2 ){
+  //   let listaProgetti = document.getElementById("listaProgetti");
+  //   listaProgetti.style.display = "block";
 
     if( skippato == false ) {
     listaProgetti.classList.add('fade'); // attiva l'animazione
@@ -61,7 +67,7 @@ function animate1() {
 
     document.getElementById("enterButton").style.display = "none";
     document.getElementById("enterButton1").setAttribute("id", "enterButton");    
-  }
+  
 }
 
 function skip() {
