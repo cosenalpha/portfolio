@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Who am i</title>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////////////////////////////////////////////////////////8Ph///f/f//333//999////f////3////AH////f////3///999///fff//3/3//8Ph//////////////////8='), auto; }</style> -->
+  </head>
+
+  <body>
+    <div class="cursore"></div>
+
+    <header>
+      <div class="row"> 
+    <div class="elemento col-1 sinistra">
+      <a href="mailto:sarah.cosentino02@gmail.com" class="bottone">EMAIL ME</a></div>
+      <div class="col-4"></div>
+      <div class="elemento col-2">
+      <a href="../index.html" id="bottoneCentrale" style="width: 33%;">srh</a></div>
+      <div class="col-4"></div>
+      <div class="elemento destra col-1">
+      <a href="../about.html" class="bottone">ABOUT</a></div>
+    </div>
+    <hr id="barrettaAlto" style="height:0.3px;border-width:0;color:white;background-color:white">
+  </header>
+
+  <!-- <div class="row"> -->
+    <div class="row">
+      <hr id="barrettaSx" class="laterali"  style="height:0.3px;border-width:0;color:white;background-color:white">
+      <div class="col-5"></div>
+      <!-- <div class="col-2" id="enterDiv"><a href="about.html" class="bottone" id="enterButton">ENTER</a> -->
+      <div class="col-2" id="enterDiv"><a class="bottone" id="enterButton" onclick="skip()">SKIP</a>
+        <a href="about.html" class="bottone" id="enterButton1">CONTACT ME</a>
+  
+      </div>
+      <hr id="barrettaDx" class="laterali"  style="height:0.3px;border-width:0;color:white;background-color:white">
+    </div>
+  <hr id="hor" style="left:0.8vw;top:50vh;width:98.4vw;position: absolute;height:0.1px;border-width:0;color:white;background-color:white">
+
+<div class="col-6 containerSx">
+  <div id="aboutTitolo" class="sinistra"><div id="str"></div>
+  <div id="testoItalics">Hi! My name is
+    <span id="nome" style=" font-family: Argent Pixel CF;
+    font-style: italic; font-weight: 400;">Sarah</span> and I'm
+    a 20-years-old visual designer.
+    I'm a Communication Design student
+    at Politecnico di Milano, currently finishing my BSc.</div>
+  </div>
+
+  <div id="testoHome">
+    <div id="str1"></div>
+    <div id="str2"></div>
+    <div id="str3"></div>
+    <div id="str4"></div>
+    <div id="str5"></div>
+    <br><br>
+    <div id="str6"></div>
+    <div id="str7"></div>
+    <div id="str8"></div>
+  </div>  
+  <div id="testoHomeAlt">skills:<br>
+    _adobe creative suite (photoshop, illustrator, <br>indesign, lightroom, premiere, aftereffects)<br>
+    _blender<br>
+    _figma<br>
+    <br><br>programming languages:<br>
+    _javascript, p5js, threejs<br>
+    _c++
+  </div> 
+</div>
+
+<div class="col-6" id="listaProgetti">
+  <div class="projectContainer" onclick="location.href='projects/flogisto.html'">
+    <div id="flogistoBox">
+    <p class="data boxContent">Sept 2022 / Feb 2023</p>
+    <p class="nameProj boxContent">Flogisto</p>
+    <p class="typeProj boxContent">Speculative design, interaction design</p>
+  </div>
+  </div>
+
+  <div class="projectContainer">
+    <div id="anthroBox" onclick="location.href='projects/anthro.html'">
+    <p class="data boxContent">Feb 2023 / Mar 2023</p>
+    <p class="nameProj boxContent doubleLine">Anthropogenic Narratives</p>
+    <p class="typeProj boxContent">Exhibition, web design</p>
+  </div>
+  </div>
+
+  <div class="projectContainer">
+    <div id="stadiaBox" onclick="location.href='projects/stadia.html'">
+    <p class="data boxContent">Sept 2021 / Jan 2022</p>
+    <p class="nameProj boxContent">Stadia Hunt</p>
+    <p class="typeProj boxContent">Service design</p>
+  </div>
+  </div>
+
+  <div class="projectContainer">
+    <div id="justachatBox" onclick="location.href='projects/justachat.html'">
+    <p class="data boxContent">Dec 2022 / Jan 2023</p>
+    <p class="nameProj boxContent">Just a Chat</p>
+    <p class="typeProj boxContent">Creative Coding</p>
+  </div>
+  </div>
+
+  <div class="projectContainer">
+    <div id="coddingBox" onclick="location.href='projects/codding.html'">
+    <p class="data boxContent">Sept 2022 / ongoing</p>
+    <p class="nameProj boxContent doubleLine">Creative Coding experiments</p>
+    <p class="typeProj boxContent">Creative Coding</p>
+  </div>
+  </div>
+
+  <div class="projectContainer">
+    <div id="varfontsBox" onclick="location.href='projects/varfonts.html'">
+    <p class="data boxContent">Aug 2022</p>
+    <p class="nameProj boxContent">Variable fonts</p>
+    <p class="typeProj boxContent">Creative Coding</p>
+  </div>
+  </div>
+
+  <div class="projectContainer" style="border-bottom: 0px solid #FFFFFF;">
+    <div id="photosBox" onclick="location.href='projects/photos.html'">
+    <p class="data boxContent">2021 / ongoing</p>
+    <p class="nameProj boxContent doubleLine">Photographic experiments</p>
+    <p class="typeProj boxContent">Photography</p>
+  </div>
+  </div>
+
+  <!-- <div class="projectContainer" style="border-bottom: 0px solid #FFFFFF;">
+    <div id="dynamisBox" onclick="location.href='projects/dynamis.html'">
+    <p class="data boxContent">Oct 2021 / Apr 2022</p>
+    <p class="nameProj boxContent">Dynamis PRC</p>
+    <p class="typeProj boxContent">Social Media Management</p>
+  </div>
+  </div> -->
+</div>
+
+
+  
+    <footer>
+      <hr id="barrettaBasso"  style="height:0.3px;border-width:0;color:white;background-color:white">
+      <div class="row"> 
+        <div class="elemento col-1 sinistra">
+          <a href="../projects.html" class="bottone">PROJECTS</a></div>
+          <div class="col-4"></div>
+        <div class="elemento col-2">
+          <div id="switch">
+            <a href="#" id="enversion" class="active bottone">EN</a> / <a href="#" class="bottone" id="itversion">IT</a>
+          </div></div>
+          <div class="col-4"></div>
+          <div class="elemento col-1 destra">
+            <a href="assets/cv.pdf" download="Cosentino_Sarah_Curriculum" id="themeBut" class="active bottone">CV</a>
+        </div>
+
+    </footer>
+ 
+    <script src="sketch.js"></script>
+
+  <script>
+
+  //   $(document).ready(function() {
+  //   $(document).on('mousemove', function(e) {
+  //     $('.cursore').css({
+  //       left: (e.pageX),
+  //       top: (e.pageY)
+  //    });
+  //   })
+  // });
+
+  // var cursor = document.querySelector(".cursore");
+  // var links = document.querySelector("#bottoneCentrale");
+  // var initCursor = false;
+
+  // // for (var i = 0; i < links.length; i++) {
+  // //   var selfLink = links[i];
+
+  //   links.addEventListener("mouseover", function() {
+  //     console.log("BIG");
+  //   //  cursor.style.transform = "translate(-50%, -50%) scale(2)";
+  //    cursor.classList.add("cursore--link");
+
+  //   });
+  //   // links.addEventListener("mouseout", function() {
+  //   //   console.log("SMALL");
+  //   //   cursor.classList.remove("cursore--link");
+  //   // });
+   
+</script>
+
+  </body>
+</html>

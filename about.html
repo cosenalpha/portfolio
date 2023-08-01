@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome!</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////////////////////////////////////////////////////////8Ph///f/f//333//999////f////3////AH////f////3///999///fff//3/3//8Ph//////////////////8='), auto; }</style> -->
+  </head>
+
+  <body>
+    <div class="cursore"></div>
+
+    
+    <script src="sketch.js"></script>
+    <header>
+      <div class="row"> 
+    <div class="elemento col-1 sinistra">
+      <a href="mailto:sarah.cosentino02@gmail.com" class="bottone">EMAIL ME</a></div>
+      <div class="col-4"></div>
+      <div class="elemento col-2">
+      <a href="index.html" id="bottoneCentrale" style="width: 33%;">srh</a></div>
+      <div class="col-4"></div>
+      <div class="elemento destra col-1">
+      <a href="about.html" class="bottone">ABOUT</a></div>
+    </div>
+    <hr id="barrettaAlto"   style="height:0.3px;border-width:0;color:white;background-color:white">
+    </header>
+ 
+
+<div class="row">
+    <hr id="barrettaSx" class="laterali"  style="height:0.3px;border-width:0;color:white;background-color:white">
+    <div class="col-5"></div>
+    <!-- <div class="col-2" id="enterDiv"><a href="about.html" class="bottone" id="enterButton">ENTER</a> -->
+    <!-- <div class="col-2" id="enterDiv"> -->
+    <!-- </div> -->
+    <hr id="barrettaDx" class="laterali"  style="height:0.3px;border-width:0;color:white;background-color:white">
+  </div>
+
+  <!-- <hr id="hor" style="left:0.8vw;top:50vh;width:98.4vw;position: absolute;height:0.1px;border-width:0;color:white;background-color:white"> -->
+  
+  
+  <div class="col-6 containerSx">
+    <div class="sinistra titoliProj">Contacts</div>
+    <div id="contatti">
+       <div class="row">
+          <div class="col-5" style="width: 35%;"></div>
+          <a href="https://www.linkedin.com/in/sarah-cosentino-0b5101224/" class="bottone" id="creditsButton">LINKEDIN</a></div>
+       <div class="row">
+          <div class="col-5" style="width: 35%;"></div>
+          <a href="https://www.behance.net/sarahcosentino" class="bottone col-2" id="creditsButton">BEHANCE</a></div>
+       <div class="row">
+          <div class="col-5" style="width: 35%;"></div>
+          <a href="https://www.instagram.com/cosenalpha/" class="bottone col-2" id="creditsButton">INSTAGRAM</a></div>
+       <div class="row">
+          <div class="col-5" style="width: 35%;"></div>
+          <a href="https://github.com/cosenalpha" class="bottone col-2" id="creditsButton">GITHUB</a></div>
+       <div class="row">
+          <div class="col-5" style="width: 35%;"></div>
+          <a href="assets/cv.pdf" download="Cosentino_Sarah_Curriculum"  class="bottone col-2" id="creditsButton">CURRICULUM VITAE</a></div>
+    </div>
+  </div>
+
+  <div class="col-6" id="listaImg" style="border: 0;">
+    <div id="testoAbout">      _web DEVELOPMENT: MYSELF<br>
+      _FONTS: kern (Pizza Typefaces), Argent Pixel CF (Connary Fagen)       <br>
+
+      _design inspo: <a href="https://www.lucaslichner.de/">Lucas Lichner's portfolio</a> (check it out it's so cool)
+      <br><br><br>
+      45°30'20.2"N 9°09'57.0"E<br>
+      milan <br>
+    italy 
+    <br><br>
+    sarah.cosentino02@gmail.com
+    </div> 
+  </div>
+  
+    <footer>
+      <hr id="barrettaBasso"  style="height:0.3px;border-width:0;color:white;background-color:white">
+      <div class="row"> 
+        <div class="elemento col-1 sinistra">
+          <a href="projects.html" class="bottone">PROJECTS</a>
+        </div>
+          <div class="col-4"></div>
+        <div class="elemento col-2">
+          <div id="switch">
+            <a href="#" id="enversion" class="active bottone">EN</a> / <a href="#" class="bottone" id="itversion">IT</a>
+          </div></div>
+          <div class="col-4"></div>
+          <div class="elemento col-1 destra">
+            <a href="assets/cv.pdf" download="Cosentino_Sarah_Curriculum" id="themeBut" class="active bottone">CV</a>
+        </div>
+    </footer>
+
+  <script>
+  //   $(document).ready(function() {
+  //   $(document).on('mousemove', function(e) {
+  //     $('.cursore').css({
+  //       left: (e.pageX),
+  //       top: (e.pageY)
+  //    });
+  //   })
+  // });
+
+  // var cursor = document.querySelector(".cursore");
+  // var links = document.querySelector("#bottoneCentrale");
+  // var initCursor = false;
+
+  // // for (var i = 0; i < links.length; i++) {
+  // //   var selfLink = links[i];
+
+  //   links.addEventListener("mouseover", function() {
+  //     console.log("BIG");
+  //   //  cursor.style.transform = "translate(-50%, -50%) scale(2)";
+  //    cursor.classList.add("cursore--link");
+
+  //   });
+  //   // links.addEventListener("mouseout", function() {
+  //   //   console.log("SMALL");
+  //   //   cursor.classList.remove("cursore--link");
+  //   // });
+   
+</script>
+
+  </body>
+</html>
