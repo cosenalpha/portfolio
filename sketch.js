@@ -1,5 +1,5 @@
 // TESTO EFFETTO TYPEWRITER
-let string = "Hi! My name is Sarah and I'm a 20-years-old visual designer. I'm a Communication Design student at Politecnico di Milano, currently finishing my BSc.";
+let string = "Hi! My name is Sarah and I'm a 21-years-old visual designer. I'm a Communication Design student at Politecnico di Milano, currently finishing my BSc.";
 
 let string1 = ["skills:", "_adobe creative suite (photoshop, illustrator, ", "indesign, lightroom, premiere, aftereffects)", "_blender", "_figma", "programming languages:", "_javascript, p5js, threejs", "_c++"]
 
