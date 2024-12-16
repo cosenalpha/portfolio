@@ -180,6 +180,7 @@ header {
   clear: left;
   vertical-align: text-bottom;
   align-items: center;
+  /* border: 2px solid white; */
 }
 
 footer {
@@ -430,7 +431,7 @@ footer {
   position: absolute;
   display: none;
   overflow-y: overlay;
-  border: 1px solid white;
+  border-left: 1px solid white;
   top: 8.24vh;
   right: 0;
   height: 86vh;
