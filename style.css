@@ -50,7 +50,12 @@ table {
 
 @font-face {
   font-family: "Redaction 50";
-  src: url(/fonts/Redaction50.otf);
+  src: url(/fonts/Redaction50-Italic.otf);
+}
+
+@font-face {
+  font-family: "PP Mori";
+  src: url(/fonts/PPMori-Regular.otf);
 }
 
 * {
