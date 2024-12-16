@@ -80,8 +80,9 @@ function skip() {
   document.getElementById("testoItalics").style.display = "block";
 
   document.getElementById("testoHome").style.display = "none";
-  document.getElementById("testoHomeAlt").style.display = "block";
+  
+  console.log("OKAY");
+  document.getElementById("enterButton1").setAttribute("id", "enterButton");    
   document.getElementById("enterButton").style.display = "none";
 
-  document.getElementById("enterButton1").setAttribute("id", "enterButton");
 }
