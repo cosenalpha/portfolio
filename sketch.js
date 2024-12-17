@@ -18,13 +18,15 @@ let skippato = false;
 let running1;
 let running;
 
+let timeOut = false;
+
 function setup() {
 }
 
 (function animate() {
   str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
   running = setTimeout(animate, 35);
-  if( running > 450 ) {
+  if( running > 450 && timeOut == false) {
     running1 = setTimeout(animate1, 35);
     let listaProgetti = document.getElementById("listaProgetti");
     listaProgetti.style.display = "block";
@@ -66,7 +68,8 @@ function animate1() {
     document.getElementById("hor").style.width = "49.2vw";
 
     document.getElementById("enterButton").style.display = "none";
-    document.getElementById("enterButton1").setAttribute("id", "enterButton");    
+    document.getElementById("enterButton1").setAttribute("id", "enterButton");  
+    timeOut = true;  
   
 }
 
@@ -81,8 +84,15 @@ function skip() {
 
   document.getElementById("testoHome").style.display = "none";
   
-  console.log("OKAY");
   document.getElementById("enterButton1").setAttribute("id", "enterButton");    
   document.getElementById("enterButton").style.display = "none";
+  timeOut = true;  
+
+}
+
+function slide() {
+ console.log("SLide");
+//  document.getElementById("flogistoBox").style.display = "none";
+
 
 }

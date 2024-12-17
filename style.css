@@ -466,6 +466,11 @@ footer {
   border-bottom: 1px solid #FFFFFF;
 }
 
+/* .projectContainer:hover {
+  transform: translate(5%, 0%);
+  -ms-transform: translate(5%, 0%);
+} */
+
 .data, .typeProj {
   font-family: "Redaction 50";
   font-style: italic;
@@ -485,15 +490,16 @@ footer {
 }
 
 .nameProj {
-  /* margin-top: 3.5vh; */
-  height: 41.7%;
+  margin-top: 7vh;
+  /* height: 50%; */
   display: block;
   font-family: "PP Mori";
   font-style: normal;
-  font-weight: 500;
-  font-size: 60px;
-  line-height: 2.3;
+  font-weight: 300;
+  font-size: 40px;
+  /* line-height: 2.3; */
 }
+
 
 .doubleLine {
   padding-top: 1.3%;
