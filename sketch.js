@@ -77,6 +77,8 @@ function overButton(overName) {
     document.getElementById("effimeroImg").style.display = "block";
   } else if (overName == 12) {
     document.getElementById("photoImg").style.display = "block";
+  } else if (overName == 13) {
+    document.getElementById("selfImg").style.display = "block";
   } else if (overName==0) {
     const imgShown = document.querySelectorAll(".imgList");
     for (let i = 0; i < imgShown.length; i++) {

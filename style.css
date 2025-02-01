@@ -333,6 +333,11 @@ header {
 .font-change {
   font-family: "Redaction 70";
   font-style: italic;
+  color:#616161;
+}
+
+.font-change:hover {
+  color: white;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ PROJECT LIST @@@@@@@@@@@@@@@@@@@@@@@@@ */
