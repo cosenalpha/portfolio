@@ -327,6 +327,7 @@ header {
 .description {
   display: block;
   padding-bottom: 4vh;
+  /* border: 1px solid red; */
 }
 
 .font-change {
@@ -341,6 +342,9 @@ header {
   padding: 10px;
   border-top: 1px solid #FFF;
   text-transform: uppercase;
+
+  justify-content: space-between;
+  align-items: center;
 }
 
 .list-butt:hover {
@@ -385,4 +389,23 @@ header {
 
 .imgOver {
   display: block;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.iconColor {
+  fill: white;
+}
+
+.list-butt:hover .iconColor {
+  fill: black;
+}
+
+#aboutDescription {
+  font-size: 1rem;
+}
+
+#about-content {
+  /* border: 1px solid red; */
+  padding-top: 15vh;
 }
