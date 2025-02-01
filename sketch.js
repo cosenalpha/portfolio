@@ -58,25 +58,25 @@ function overButton(overName) {
   } else if (overName == 3) {
     document.getElementById("anthroImg").style.display = "block";
   } else if (overName == 4) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("interdependenceImg").style.display = "block";
   } else if (overName == 5) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("netzeroImg").style.display = "block";
   } else if (overName == 5) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("netzeroImg").style.display = "block";
   } else if (overName == 6) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("stadiaImg").style.display = "block";
   } else if (overName == 7) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("vakenImg").style.display = "block";
   } else if (overName == 8) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("pawsImg").style.display = "block";
   } else if (overName == 9) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("chatImg").style.display = "block";
   } else if (overName == 10) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("codingImg").style.display = "block";
   } else if (overName == 11) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("effimeroImg").style.display = "block";
   } else if (overName == 12) {
-    document.getElementById("flogistoImg").style.display = "block";
+    document.getElementById("photoImg").style.display = "block";
   } else if (overName==0) {
     const imgShown = document.querySelectorAll(".imgList");
     for (let i = 0; i < imgShown.length; i++) {
