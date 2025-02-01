@@ -7,92 +7,34 @@
     <title>Welcome!</title>
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <script src="libraries/p5.min.js"></script>
+    <!-- <script src="libraries/p5.sound.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <!-- <style type="text/css">body { cursor: url('data:image/x-icon;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////////////////////////////////////////////////////////////////////////////////////8Ph///f/f//333//999////f////3////AH////f////3///999///fff//3/3//8Ph//////////////////8='), auto; }</style> -->
   </head>
 
-  <body>
-    <div class="cursore"></div>
-
-    
+  <body onclick='click_anywhere()'>
     <script src="sketch.js"></script>
-    <header>
-      <div class="row"> 
-    <div class="elemento col-1 sinistra">
-      <a href="mailto:sarah.cosentino02@gmail.com" class="bottone">EMAIL ME</a></div>
-      <div class="col-4"></div>
-      <div class="elemento col-2">
-      <a href="index.html" id="bottoneCentrale" style="width: 33%;">srh</a></div>
-      <div class="col-4"></div>
-      <div class="elemento destra col-1">
-      <a href="about.html" class="bottone">ABOUT</a></div>
-    </div>
-    <hr id="barrettaAlto"   style="height:0.3px;border-width:0;color:white;background-color:white">
-    </header>
 
-<div class="row">
-    <hr id="barrettaSx" class="laterali"  style="height:0.3px;border-width:0;color:white;background-color:white">
-    <div class="col-5"></div>
-    <!-- <div class="col-2" id="enterDiv"><a href="about.html" class="bottone" id="enterButton">ENTER</a> -->
-    <div class="col-2" id="enterDiv"><a href="projects.html" class="bottone" id="enterButton">CLICK HERE TO START</a>
+ 
+   <div class="row">
+      <div class="col-5" style="margin:1vw"><br></div>
+      <div class="col-2" id="intro">
+        <span id="type" style="--n:38;">Hello!  <br>i'm sarah  <br>welcome to my portfolio &nbsp;</span>
+      </div>
+      <div class="col-5"  style="margin:1vw"></div>
+   </div>
 
-    </div>
-    <hr id="barrettaDx" class="laterali"  style="height:0.3px;border-width:0;color:white;background-color:white">
-  </div>
-
-  
-    <!-- <div id="intro" class="titoli">WELCOME!</div> -->
+   <div class="row">
+    <div class="col-5" style="margin:1vw"><br></div>
+    <div class="col-2" id="click">
+      click anywhere to start    </div>
+    <div class="col-5"  style="margin:1vw"></div>
+ </div>
 
     <footer>
-      <hr id="barrettaBasso"  style="height:0.3px;border-width:0;color:white;background-color:white">
-      <div class="row"> 
-        <div class="elemento col-1 sinistra">
-          <a href="projects.html" class="bottone">PROJECTS</a>
-        </div>
-          <div class="col-4"></div>
-        <div class="elemento col-2">
-          <div id="switch">
-            <a href="#" id="enversion" class="active bottone">EN</a> / <a href="#" class="bottone" id="itversion">IT</a>
-          </div></div>
-          <div class="col-4"></div>
-          <div class="elemento col-1 destra">
-            <a href="assets/cv.pdf" download="Cosentino_Sarah_Curriculum" id="themeBut" class="active bottone">CV</a>
-        </div>
     </footer>
-
-  <script>
-  //   $(document).ready(function() {
-  //   $(document).on('mousemove', function(e) {
-  //     $('.cursore').css({
-  //       left: (e.pageX),
-  //       top: (e.pageY)
-  //    });
-  //   })
-  // });
-
-  // var cursor = document.querySelector(".cursore");
-  // var links = document.querySelector("#bottoneCentrale");
-  // var initCursor = false;
-
-  // // for (var i = 0; i < links.length; i++) {
-  // //   var selfLink = links[i];
-
-  //   links.addEventListener("mouseover", function() {
-  //     console.log("BIG");
-  //   //  cursor.style.transform = "translate(-50%, -50%) scale(2)";
-  //    cursor.classList.add("cursore--link");
-
-  //   });
-  //   // links.addEventListener("mouseout", function() {
-  //   //   console.log("SMALL");
-  //   //   cursor.classList.remove("cursore--link");
-  //   // });
-   
-</script>
 
   </body>
 </html>

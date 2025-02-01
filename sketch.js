@@ -1,98 +1,74 @@
-// TESTO EFFETTO TYPEWRITER
-let string = "Hi! My name is Sarah and I'm a 21-years-old visual designer. I'm a Communication Design student at Politecnico di Milano, currently finishing my BSc.";
+let timerValue = 6300;
+let clickValue = false;
+let filters = [];
 
-let string1 = ["skills:", "_adobe creative suite (photoshop, illustrator, ", "indesign, lightroom, premiere, aftereffects)", "_blender", "_figma", "programming languages:", "_javascript, p5js, threejs", "_c++"]
-
-let n = 0;
-
-let str = string.split("");
-let str1 = string1[n].split("");
-
-let el = document.getElementById('str');
-let el1 = [document.getElementById('str1'), document.getElementById('str2'), document.getElementById('str3'), document.getElementById('str4'), document.getElementById('str5'), document.getElementById('str6'), document.getElementById('str7'), document.getElementById('str8')]
-
-let dTempo;
-let timer;
-let skippato = false;
-
-let running1;
-let running;
-
-let timeOut = false;
-
-function setup() {
+function loop() {
+    if (millis()>timerValue) {
+        document.getElementById('click').style.display = "block";
+        clickValue = true;
+    }
 }
 
-(function animate() {
-  str.length > 0 ? el.innerHTML += str.shift() : clearTimeout(running); 
-  running = setTimeout(animate, 35);
-  if( running > 450 && timeOut == false) {
-    running1 = setTimeout(animate1, 35);
-    let listaProgetti = document.getElementById("listaProgetti");
-    listaProgetti.style.display = "block";
+function click_anywhere() {
+    if (clickValue == false) {
+        document.getElementById('click').style.display = "block";
+        document.getElementById('type').style.animation = "b .8s infinite steps(1)";
 
-    if( skippato == false ) {
-    listaProgetti.classList.add('fade'); // attiva l'animazione
-    }
-  } else if( running == 450 ) {
-    timer = millis();
-  }
-})();
+        clickValue = true;
+    } else if (clickValue == true) {
+        window.location = 'projects.html';    }
+}
 
-function animate1() {
-//   if ( n == 1 || n == 2 ) {
-//     dTempo = 2500;
-    document.getElementById("str").style.display = "none";
-    document.getElementById("testoItalics").style.display = "block";
-//   } else if ( n == 5 || n == 6) {
-//     dTempo = 1600;
-//   } else if (n == 0 || n == 3 || n == 4 || n == 7) {
-//     dTempo = 950;
-//   } 
+// @@@@@@@@@@@@@@@@@@@ FUNZIONE FILTRO LISTA PROGETTI @@@@@@@@@@@@@@@@@@@
 
-  // if( n < 2 ) {
-  // //  str1.length > 0 ? el1[n].innerHTML += str1.shift() : clearTimeout(running1);
-  //   if(millis() - timer > dTempo) {
-  //     n++;
-  //     str1 = string1[n].split("");
-  //     timer = millis();
-  //   }
-  // } else if ( n == 2 ){
-  //   let listaProgetti = document.getElementById("listaProgetti");
-  //   listaProgetti.style.display = "block";
+let typeOld = [];
 
-    if( skippato == false ) {
-    listaProgetti.classList.add('fade'); // attiva l'animazione
+function filter(type) {
+    typeOld.push(type);
+    for (let i = 0; i < typeOld.length; i++) {
+     if (typeOld[i] == typeOld[i-1]) {
+        clearFilter();
+     } else {
+        const activeFilter = document.querySelectorAll(".filter-active");
+    for (let i = 0; i < activeFilter.length; i++) {
+        activeFilter[i].classList.toggle("filter-active");
     }
 
-    document.getElementById("hor").style.width = "49.2vw";
+    let nameButt = "b-" + type;
+    document.getElementById(nameButt).classList.toggle("filter-active");
 
-    document.getElementById("enterButton").style.display = "none";
-    document.getElementById("enterButton1").setAttribute("id", "enterButton");  
-    timeOut = true;  
-  
+
+    if (document.querySelector(".filter-active")) {
+      const nodeList = document.querySelectorAll(".list-butt");
+      for (let i = 0; i < nodeList.length; i++) {
+         nodeList[i].style.display = "none";
+       }
+    
+      let nameClass = ".f-" + type;
+      const viewList = document.querySelectorAll(nameClass);
+      for (let i = 0; i < viewList.length; i++) {
+         viewList[i].style.display = "block";
+       }
+      document.querySelector(nameClass).style.border = "none";
+    }
+     }
+    }
+
+     
 }
 
-function skip() {
-  skippato = true;
+function clearFilter() {
+    const nodeList = document.querySelectorAll(".list-butt");
+    for (let i = 0; i < nodeList.length; i++) {
+      nodeList[i].style.display = "block";
+      nodeList[i].style.borderTop = "1px solid #FFF";
+    }
 
-  document.getElementById("listaProgetti").style.display = "block";
- 
-  document.getElementById("hor").style.width = "49.2vw";
-  document.getElementById("str").style.display = "none";
-  document.getElementById("testoItalics").style.display = "block";
+    document.querySelector(".list-butt").style.border = "none";
 
-  document.getElementById("testoHome").style.display = "none";
-  
-  document.getElementById("enterButton1").setAttribute("id", "enterButton");    
-  document.getElementById("enterButton").style.display = "none";
-  timeOut = true;  
-
-}
-
-function slide() {
- console.log("SLide");
-//  document.getElementById("flogistoBox").style.display = "none";
-
-
+    const activeFilter = document.querySelectorAll(".filter-active");
+    for (let i = 0; i < activeFilter.length; i++) {
+        // activeFilter[i].style.opacity = "40%";
+        activeFilter[i].classList.toggle("filter-active");
+    }
 }
