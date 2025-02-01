@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Redaction 70";
   font-style: italic;
-  src: url(/fonts/Redaction70-Italic.otf);
+  src: url("./fonts/Redaction70-Italic.otf");
 }
 
 .ibm-plex-mono-thin {
