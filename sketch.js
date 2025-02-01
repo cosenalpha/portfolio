@@ -1,24 +1,3 @@
-let timerValue = 6300;
-let clickValue = false;
-let filters = [];
-
-function loop() {
-    if (millis()>timerValue) {
-        document.getElementById('click').style.display = "block";
-        clickValue = true;
-    }
-}
-
-function click_anywhere() {
-    if (clickValue == false) {
-        document.getElementById('click').style.display = "block";
-        document.getElementById('type').style.animation = "b .8s infinite steps(1)";
-
-        clickValue = true;
-    } else if (clickValue == true) {
-        window.location = 'projects.html';    }
-}
-
 // @@@@@@@@@@@@@@@@@@@ FUNZIONE FILTRO LISTA PROGETTI @@@@@@@@@@@@@@@@@@@
 
 let typeOld = [];
@@ -32,7 +11,7 @@ function filter(type) {
         const activeFilter = document.querySelectorAll(".filter-active");
     for (let i = 0; i < activeFilter.length; i++) {
         activeFilter[i].classList.toggle("filter-active");
-    }
+      }
 
     let nameButt = "b-" + type;
     document.getElementById(nameButt).classList.toggle("filter-active");
@@ -50,11 +29,9 @@ function filter(type) {
          viewList[i].style.display = "block";
        }
       document.querySelector(nameClass).style.border = "none";
+      }
     }
-     }
-    }
-
-     
+  }
 }
 
 function clearFilter() {
@@ -71,4 +48,44 @@ function clearFilter() {
         // activeFilter[i].style.opacity = "40%";
         activeFilter[i].classList.toggle("filter-active");
     }
+}
+
+function overButton(overName) {
+  if (overName==1) {
+    document.getElementById("ripplesImg").style.display = "block";
+  } else if (overName == 2) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 3) {
+    document.getElementById("anthroImg").style.display = "block";
+  } else if (overName == 4) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 5) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 5) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 6) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 7) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 8) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 9) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 10) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 11) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName == 12) {
+    document.getElementById("flogistoImg").style.display = "block";
+  } else if (overName==0) {
+    const imgShown = document.querySelectorAll(".imgList");
+    for (let i = 0; i < imgShown.length; i++) {
+      imgShown[i].style.display = "none";
+    }
+  }
+
+}
+
+function downButton() {
+  // document.getElementById("ripplesImg").style.display ="none";
 }

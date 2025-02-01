@@ -15,9 +15,6 @@
   </head>
 
   <body onclick='click_anywhere()'>
-    <script src="sketch.js"></script>
-
- 
    <div class="row">
       <div class="col-5" style="margin:1vw"><br></div>
       <div class="col-2" id="intro">
@@ -35,6 +32,30 @@
 
     <footer>
     </footer>
+
+    <script>
+let timerValue = 6300;
+let clickValue = false;
+
+       function draw() {
+    if (millis()>timerValue) {
+        document.getElementById('click').style.display = "block";
+        console.log("Clicek");
+        clickValue = true;
+    }
+}
+
+function click_anywhere() {
+    if (clickValue == false) {
+        document.getElementById('click').style.display = "block";
+        document.getElementById('type').style.animation = "b .8s infinite steps(1)";
+
+        clickValue = true;
+    } else if (clickValue == true) {
+        window.location = 'projects.html';    }
+}
+
+    </script>
 
   </body>
 </html>

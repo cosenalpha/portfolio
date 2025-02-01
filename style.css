@@ -164,9 +164,8 @@ h1, h2, h3, h4, h5, h6 {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
-
-
 }
+
   [class*="col-"] {
     float: left;
     padding: 0;
@@ -177,11 +176,8 @@ h1, h2, h3, h4, h5, h6 {
     content: "";
     clear: both; /* La proprietà clear serve a impedire che al fianco di un elemento float compaiano altri elementi */
     display: table;
-  
   }
   
-
-
 html, body {
   margin: 0;
   background-color: #060606;
@@ -275,8 +271,6 @@ body {
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ HEADER @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 header {
-  /* padding: 0.9vw 1.2vw; */
-  /* border: 1px solid purple; */
   height: 2.5vh;
 }
 
@@ -288,7 +282,6 @@ header {
   text-transform: uppercase;
   text-align: left;
   white-space:nowrap;
-
 }
 
 .header-butt:hover {
@@ -300,6 +293,9 @@ header {
   font-style: italic;
 }
 
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ LAYOUT @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+
 .content {
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
@@ -309,7 +305,7 @@ header {
   height: 93vh;
 }
 
-#left-col {
+.left-col {
   align-items: center;
   height: 90vh;
   display: flex;
@@ -317,8 +313,15 @@ header {
   /* border: 1px solid yellow; */
 }
 
-#centre-col {
+.centre-col {
   padding-top: 7%;
+  /* border: 1px solid green; */
+}
+
+.right-col {
+  /* border: 1px solid blue; */
+  height: 93vh;
+  padding-left: 1.5vw;
 }
 
 .description {
@@ -330,7 +333,6 @@ header {
   font-family: "Redaction 70";
   font-style: italic;
 }
-
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ PROJECT LIST @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -371,4 +373,16 @@ header {
 .icon {
   width: 1rem;
   height: 1rem;
+}
+
+.imgList {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border: 1px solid white;
+  display: none;
+}
+
+.imgOver {
+  display: block;
 }
