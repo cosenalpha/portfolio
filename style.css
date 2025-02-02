@@ -272,6 +272,7 @@ body {
 
 header {
   height: 2.5vh;
+  vertical-align: middle;
 }
 
 .header-butt {
@@ -281,7 +282,7 @@ header {
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
 .header-butt:hover {
@@ -395,6 +396,7 @@ header {
 .imgOver {
   display: block;
 }
+
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ ABOUT @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
