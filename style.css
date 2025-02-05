@@ -315,7 +315,7 @@ header {
 }
 
 .centre-col {
-  padding-top: 7%;
+  padding-top: 9vh;
   /* border: 1px solid green; */
 }
 
@@ -363,6 +363,7 @@ header {
   font-size: 0.7rem;
   width: 100%;
 }
+
 
 .filter-butt {
   display: flex;

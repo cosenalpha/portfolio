@@ -4,9 +4,15 @@ let typeOld = [];
 
 function filter(type) {
     typeOld.push(type);
+    console.log(type);
+    console.log(typeOld);
+
     for (let i = 0; i < typeOld.length; i++) {
      if (typeOld[i] == typeOld[i-1]) {
+
+
         clearFilter();
+        break
      } else {
         const activeFilter = document.querySelectorAll(".filter-active");
     for (let i = 0; i < activeFilter.length; i++) {
@@ -48,6 +54,7 @@ function clearFilter() {
         // activeFilter[i].style.opacity = "40%";
         activeFilter[i].classList.toggle("filter-active");
     }
+    typeOld = [];
 }
 
 function overButton(overName) {
