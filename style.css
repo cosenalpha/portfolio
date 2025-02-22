@@ -282,6 +282,7 @@ header {
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
+  align-content: baseline;
   white-space: nowrap;
 }
 
@@ -316,6 +317,7 @@ header {
 
 .centre-col {
   padding-top: 9vh;
+  overflow-y: visible;
   /* border: 1px solid green; */
 }
 
@@ -364,6 +366,24 @@ header {
   width: 100%;
 }
 
+.icon-align {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.side-text {
+  opacity: 40%;
+  padding-bottom: 0.25rem;
+  font-size: 0.7rem;
+  width: 100%;
+}
+
+.divider {
+  color: black;
+  font-family: "IBM Plex Mono", serif;
+  font-weight: 500;
+}
 
 .filter-butt {
   display: flex;
@@ -416,4 +436,109 @@ header {
 #about-content {
   /* border: 1px solid red; */
   padding-top: 15vh;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ PROJECT PAGES @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.prj-title {
+  font-family: "Redaction 70";
+  font-style: italic; 
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.6rem;
+}
+
+.date {
+  color: #616161; 
+  font-size: 0.7rem;
+  font-family: "IBM Plex Mono";
+  font-style: normal;
+  text-transform: none;
+  padding-left: 1vw;
+}
+
+/* @@@@@@@@@@@@@@ LAYOUT @@@@@@@@@@@@@@ */
+
+
+.left-col-prj {
+  padding-top: 9vh;
+  padding-right: 1vw;
+  /* border: 1px solid red; */
+}
+
+.right-col-prj {
+  padding-top: 9vh;
+  padding-left: 1vw;
+  /* border: 1px solid green; */
+}
+
+
+.side-text-prj {
+  color:#616161;
+  font-size: 0.7rem;
+  width: 100%;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+/* @@@@@@@@@@@@@@ BUTTONS ON THE LEFT @@@@@@@@@@@@@@ */
+
+
+.list-butt-prj {
+  border-top: 1px solid #616161;
+}
+
+.resp-butt {
+  display: block;
+  padding: 10px;
+  color: white;
+  opacity: 40%;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resp-butt:hover {
+  opacity: 100%;
+  background-color: white;
+  color: black;
+}
+
+.button-content {
+  padding: 10px;
+  display: none;
+}
+
+.button-list-prj {
+  padding-top: 21vh;
+}
+
+.opened-box {
+  display: block;
+  color: white;
+}
+
+.active-button {
+  color: white;
+  opacity: 100%;
+}
+
+/* @@@@@@@@@@@@@@ PRJ CONTENT @@@@@@@@@@@@@@ */
+
+.vid-frame {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* border: 1px solid white;
+  border-top: 10px solid white; */
+}
+
+.video-box {
+  display: block;
+  width: 100%;
+  height: 51vh;
+}
+
+.prj-text {
+  padding: 3vh 0;
 }

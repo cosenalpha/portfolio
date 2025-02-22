@@ -32,7 +32,7 @@ function filter(type) {
       let nameClass = ".f-" + type;
       const viewList = document.querySelectorAll(nameClass);
       for (let i = 0; i < viewList.length; i++) {
-         viewList[i].style.display = "block";
+         viewList[i].style.display = "flex";
        }
       document.querySelector(nameClass).style.border = "none";
       }
@@ -43,7 +43,7 @@ function filter(type) {
 function clearFilter() {
     const nodeList = document.querySelectorAll(".list-butt");
     for (let i = 0; i < nodeList.length; i++) {
-      nodeList[i].style.display = "block";
+      nodeList[i].style.display = "flex";
       nodeList[i].style.borderTop = "1px solid #FFF";
     }
 
@@ -95,6 +95,11 @@ function overButton(overName) {
 
 }
 
-function downButton() {
-  // document.getElementById("ripplesImg").style.display ="none";
+function openBox(boxN) {
+  console.log(boxN);
+  let boxName = "box-" + boxN;
+  let buttonName = "butt-" + boxN;
+  document.getElementById(boxName).classList.toggle("opened-box");
+  document.getElementById(buttonName).classList.toggle("active-button");
+
 }
