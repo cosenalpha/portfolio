@@ -183,7 +183,7 @@ html, body {
   background-color: #060606;
   color: white;
   cursor: crosshair;
-  /* overflow: none; */
+  /* overflow-y: hidden; */
 }
 
 body {
@@ -194,7 +194,7 @@ body {
 /* scroll bar */
 /* larghezza */
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 /* traccia di scorrimento: sorta di binario su cui si muove la barra di scorrimento */
@@ -204,13 +204,13 @@ body {
 
 /* barra di scorrimento: elemento che viene trascinato per scorrere nella pagina */
 ::-webkit-scrollbar-thumb {
-  background: #69696950;
-  /* border-radius: 50px; */
+  background: none;
+  border-radius: 100px;
 }
 
 /* barra di scorrimento al passaggio del mouse */
 ::-webkit-scrollbar-thumb:hover {
-  background: white;
+  background: #616161;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ HOMEPAGE @@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -223,7 +223,7 @@ body {
   /* border: 1px solid green; */
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
   text-align: left;
@@ -237,7 +237,7 @@ body {
   /* border: 1px solid green; */
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 400;
   text-transform: uppercase;
   color: #616161;
@@ -301,7 +301,7 @@ header {
 .content {
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 400;
   /* border: 1px solid green; */
   height: 93vh;
@@ -317,8 +317,9 @@ header {
 
 .centre-col {
   padding-top: 9vh;
-  overflow-y: visible;
   /* border: 1px solid green; */
+  overflow-y: scroll;
+height: 100%;
 }
 
 .right-col {
