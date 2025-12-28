@@ -499,19 +499,12 @@ height: 100%;
   align-items: center;
 }
 
-.resp-butt:hover {
-  opacity: 100%;
-  background-color: white;
-  color: black;
-}
-
 .button-content {
   padding: 10px;
-  display: none;
 }
 
 .button-list-prj {
-  padding-top: 21vh;
+  padding-top: 20vh;
 }
 
 .opened-box {
@@ -525,6 +518,16 @@ height: 100%;
 }
 
 /* @@@@@@@@@@@@@@ PRJ CONTENT @@@@@@@@@@@@@@ */
+
+.mini-title {
+  padding-top: 3vh;
+  display: block;
+  font-family: "Redaction 70";
+  font-style: italic; 
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.6rem;
+}
 
 .vid-frame {
   width: 100%;
@@ -541,5 +544,27 @@ height: 100%;
 }
 
 .prj-text {
+  /* font-family: Helvetica; */
+  /* font-size: 0.8rem; */
   padding: 3vh 0;
+}
+
+.single-img {
+  border: 0.2px solid #616161;
+}
+
+.img-row {
+  height: 49%;
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  content: '';
+}
+
+.double-img {
+  border: 0.2px solid #616161;
+  float: left;
+  display: block;
+   max-width: auto;
+   height: 100%;
 }

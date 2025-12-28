@@ -37,31 +37,55 @@
     <div class="row col-12 content">
     <div class="col-3 left-col-prj">
     <span class="prj-title">Flogisto<span class="date">Sept 2022 / Feb 2023</span></span>
-    <div class="side-text-prj button-list-prj">
-      <div class="list-butt-prj"  style="border:none" onclick="openBox('1')"><div id="butt-1" class="resp-butt">my responsibilities</div><div class="button-content" id="box-1">Concept, speculation and scenario creation; interaction design of the machine and prototyping, including electronics and coding</div></div>
-      <div class="list-butt-prj" onclick="openBox('2')"><div id="butt-2" class="resp-butt">team members</div><div class="button-content"  id="box-2">Giacomo Cincotti, Sarah Cosentino,
+          <div class="side-text-prj  button-list-prj">
+        A speculative design project set in 2070, in a world where the human race has almost ran out of fossil fuel and the energetic crisis has worsened the economic gap. Flogisto is a new service offered by the company Ash, a multinational corporation that has been in the power generation business since 2050 and has found a new way to produce energy: by burning dead bodies.</div>
+    <!-- <div class="side-text-prj button-list-prj">
+      <div class="list-butt-prj"  style="border:none"><div id="butt-1" class="resp-butt">my responsibilities</div><div class="button-content" id="box-1">Concept, speculation and scenario creation; interaction design of the machine and prototyping, including electronics and coding</div></div>
+      <div class="list-butt-prj"><div id="butt-2" class="resp-butt">team members</div><div class="button-content"  id="box-2">Giacomo Cincotti, Sarah Cosentino,
         Selene Garresio, Giorgia Maggiolini,
         Alessandra Palombelli, Bianca Maria Sforza</div></div>
-      <div class="list-butt-prj" onclick="openBox('3')"><div  id="butt-3" class="resp-butt">tags</div><div class="button-content"  id="box-3">Speculative design, interaction design</div></div>
-    </div>
+      <div class="list-butt-prj"><div  id="butt-3" class="resp-butt">tags</div><div class="button-content"  id="box-3">Speculative design, interaction design</div></div>
+    </div> -->
     </div>
 
     <div class="col-6 centre-col">
       <div class="video-box">
-      <iframe class="vid-frame" src="https://www.youtube.com/embed/ckGNKqrrgck?si=wfNldlUkeIJk1hS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
-      <div class="prj-text">Among the elements of nature, fire has always been associated with danger and destruction. However, at the same time, the relationship between this element and the human being has always been controversial: at first, prehistoric man learnt to tame it, then to exploit its combustion possibilities, only to succumb again to the consequences of the energy crisis.<br><br>
-        <video autoplay loop><source src="../assets/flogisto/flogisto_banner.mp4" type="video/mp4"></video>      
-          <div class="prj-text">In 2070, due to the depletion of fossil fuels, energy is a commodity for the few and its price is skyrocketing.<br><br>
-          Ash is a multinational company that has been in the energy production business since 2050. Due to the fossil fuel crisis, energy became a commodity for the few and its price is skyrocketing, so Ash conducted a huge research on the subject and found a decisive solution: Flogisto, a new service that generates electricity from the combustion of human bodies.</div>
-        </div>
+      <iframe class="vid-frame single-img" src="https://www.youtube.com/embed/ckGNKqrrgck?si=wfNldlUkeIJk1hS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>              
+        <!-- <video autoplay loop><source src="../assets/flogisto/flogisto_banner.mp4" type="video/mp4"></video>       -->
+          <div class="prj-text">Global warming and climate change have marked this century and forced us to rethink and adapt much of our lives. In 2070, due to the depletion of fossil fuels, energy is a commodity for the few and its price is skyrocketing.<br><br>
 
+          Ash is an energy company founded in 2045 in response to a constantly changing world. After 40 years of experience and research, it is the first company in the world to be able to provide effective and definitive solutions to the energy crisis.</div>
+          <video autoplay loop class="single-img"><source src="../assets/flogisto/palazzi.mp4" type="video/mp4"></video>  
+
+         <div class="prj-text">Flogisto is a service that allows everyone to earn money from the combustion of their body.          Users who decide to join the service receive a financial reward based on the amount of energy that can be generated from burning their bodies.<br><br>Ash provides a dedicated measuring device that allows users to know their energy value and, consequently, their economic value. The evaluation process, that takes into account height, body mass, fat mass, hydration and alcohol level, gives out a receipt with the user's energetic value.</div>
+         
+         <div class="img-row">
+              <video autoplay loop class="double-img"><source src="../assets/flogisto/packaging.mp4" type="video/mp4"></video>
+              <span class = "gap">&nbsp;</span> 
+              <img class="double-img" src="../assets/flogisto/scontrino.png"></img>
+         </div>
+
+         <div class="prj-text">Following the initial evaluation, customers will be given the option to choose whether they are satisfied with their energy and, consequently, economic value. If so, they will sign a contract specifying how long they wish to live, ranging from one month to seven years. Their reward will then be paid in equal monthly instalments until their death. In order to receive their reward, the customer is required to maintain their initial energetic value.<br><br>         The evaluation device is present in store and connects to the personal area of the individual customer, which allows them to always be able to track their progress to ensure a smooth end of life.
+         </div>
+         
+         <div class="mini-title">The device development</div>
+           <div class="prj-text">The evaluation device is programmed with Arduino (C++) and Javascript (mainly p5.js) and connects to a computer. The computer and Arduino UNO (the microcontroller that runs the device) communicate through the serial port. P5.js uses the library p5.serialcontrol to send data to Arduino, and the reception of the string triggers the printing function. 
+</div>
+
+
+      </div> 
+      <!-- fine colonna centrale -->
   
-
-    </div>
-
     <div class="col-3 right-col-prj">
-      <div class="side-text-prj">
-        A speculative design project set in 2070, in a world where the human race has almost ran out of fossil fuel and the energetic crisis has worsened the economic gap. Flogisto is a new service offered by the company Ash, a multinational corporation that has been in the power generation business since 2050 and has found a new way to produce energy: by burning dead bodies.</div>
+      <!-- <div class="side-text-prj" style="color:white">
+        A speculative design project set in 2070, in a world where the human race has almost ran out of fossil fuel and the energetic crisis has worsened the economic gap. Flogisto is a new service offered by the company Ash, a multinational corporation that has been in the power generation business since 2050 and has found a new way to produce energy: by burning dead bodies.</div> -->
+        <div class="side-text-prj">
+      <div class="list-butt-prj"  style="border:none"><div id="butt-1" class="resp-butt">my responsibilities</div><div class="button-content" id="box-1">Concept, speculation and scenario creation; interaction design of the machine and prototyping, including electronics and coding</div></div>
+      <div class="list-butt-prj"><div id="butt-2" class="resp-butt">team members</div><div class="button-content"  id="box-2">Giacomo Cincotti, Sarah Cosentino,
+        Selene Garresio, Giorgia Maggiolini,
+        Alessandra Palombelli, Bianca Maria Sforza</div></div>
+      <div class="list-butt-prj"><div  id="butt-3" class="resp-butt">tags</div><div class="button-content"  id="box-3">Speculative design, interaction design</div></div>
+    </div>
     </div>
     </div>
   
