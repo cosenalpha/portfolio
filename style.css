@@ -145,10 +145,7 @@ h1, h2, h3, h4, h5, h6 {
   box-sizing: border-box;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
+
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -293,6 +290,11 @@ header {
 .header-butt.active {
   font-family: "Redaction 70";
   font-style: italic;
+}
+
+#butt-3 {
+    text-align: right;
+
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ LAYOUT @@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -464,13 +466,19 @@ height: 100%;
 .left-col-prj {
   padding-top: 9vh;
   padding-right: 1vw;
-  /* border: 1px solid red; */
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
 }
 
 .right-col-prj {
   padding-top: 9vh;
   padding-left: 1vw;
-  /* border: 1px solid green; */
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
 }
 
 
@@ -479,7 +487,7 @@ height: 100%;
   font-size: 0.7rem;
   width: 100%;
   align-items: center;
-  /* border: 1px solid red; */
+  height: 100%;
 }
 
 /* @@@@@@@@@@@@@@ BUTTONS ON THE LEFT @@@@@@@@@@@@@@ */
@@ -504,7 +512,7 @@ height: 100%;
 }
 
 .button-list-prj {
-  padding-top: 20vh;
+  padding-top: 2vh;
 }
 
 .opened-box {
@@ -527,6 +535,22 @@ height: 100%;
   font-weight: 400;
   line-height: normal;
   font-size: 1.6rem;
+}
+
+#butt-1 {
+  padding-top: 0;
+}
+
+.right-col-prj .nxt-butt-3 {
+  padding: 0;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.left-col-prj .prv-butt-3 {
+  padding: 0;
+  text-align: left;
+  display: flex;
 }
 
 .vid-frame {
@@ -553,28 +577,6 @@ height: 100%;
   border: 0.2px solid #616161;
 }
 
-/* .img-row {
-  max-width: 100%;
-  border: 0.2px dotted orange;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .img-row {
-    border: 0.2 dotted orange;
-
-  display: flex;
-height: auto;
-width: 100%;
-}
-
-.img-row > div{
-  display: flex;
-  flex: 1 1 auto;
-} */
-
 .img-row {
   display: grid;
   grid-template-columns: auto auto;
@@ -595,4 +597,49 @@ width: 100%;
    height: 100%;
    object-fit: cover;
    object-position: center; 
+}
+
+
+
+@media only screen and (max-width: 767px) {
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+.blank {
+  display: none;
+}
+
+.header-butt {
+  text-align: left;
+  padding: 0.3vh 0;
+}
+
+#butt-3 {
+    text-align: left;
+}
+
+.left-col-prj {
+  padding-top: 2vh;
+}
+
+.prj-title {
+  font-family: "Redaction 70";
+  font-style: italic; 
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.8rem;
+}
+  
+.button-list-prj {
+  padding-top: 2vh;
+}
+
+.centre-col {
+ padding: 2vh 0;
+}
+
 }
