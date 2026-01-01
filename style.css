@@ -321,7 +321,9 @@ header {
   padding-top: 9vh;
   /* border: 1px solid green; */
   overflow-y: scroll;
-height: 100%;
+  height: 100%;
+  justify-content: center;
+
 }
 
 .right-col {
@@ -346,14 +348,36 @@ height: 100%;
   color: white;
 }
 
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@ CONTACTS @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+#contacts-content {
+  padding: 20% 0;
+  margin: 0;
+  height: 100%;
+  /* display: grid; */
+}
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ PROJECT LIST @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
+#prj-list {
+ /* border: 1px solid green; */
+  padding: 17% 0;
+  height: min-content;
+  /* display: grid; */
+}
+
+#hide-prj {
+  display: none;
+}
+
 .list-butt {
+  height: min-content;
   display: flex;
   padding: 10px;
+  margin: 0;
   border-top: 1px solid #FFF;
   text-transform: uppercase;
-
   justify-content: space-between;
   align-items: center;
 }
@@ -437,8 +461,32 @@ height: 100%;
 }
 
 #about-content {
-  /* border: 1px solid red; */
-  padding-top: 15vh;
+  padding-bottom: 1vh;
+}
+
+.mini-title-abt {
+  font-family: "Redaction 70";
+  font-style: italic; 
+  font-weight: 400;
+  line-height: normal;
+  font-size: 1.6rem;
+  padding-bottom: 2vh;
+}
+
+.abt-title {
+  color: white;
+  font-weight: 500;
+  opacity: 1;
+}
+
+.abt-date {
+  color: #616161
+}
+
+.abt-text {
+  color: #BABABA;
+    font-weight: 300;
+
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ PROJECT PAGES @@@@@@@@@@@@@@@@@@@@@@@@@ */
@@ -490,14 +538,14 @@ height: 100%;
   height: 100%;
 }
 
-/* @@@@@@@@@@@@@@ BUTTONS ON THE LEFT @@@@@@@@@@@@@@ */
+/* @@@@@@@@@@@@@@ LIST ON THE RIGHT @@@@@@@@@@@@@@ */
 
 
-.list-butt-prj {
+.specs-list {
   border-top: 1px solid #616161;
 }
 
-.resp-butt {
+.specs-title {
   display: block;
   padding: 10px;
   color: white;
@@ -511,7 +559,7 @@ height: 100%;
   padding: 10px;
 }
 
-.button-list-prj {
+.prj-descr {
   padding-top: 2vh;
 }
 
@@ -537,7 +585,7 @@ height: 100%;
   font-size: 1.6rem;
 }
 
-#butt-1 {
+.butt-1 {
   padding-top: 0;
 }
 
@@ -545,6 +593,14 @@ height: 100%;
   padding: 0;
   justify-content: flex-end;
   display: flex;
+}
+
+.nxt-butt-3:hover, .prv-butt-3:hover {
+  text-decoration: underline;
+  font-family: "Redaction 70";
+  font-style: italic;
+  color: white;
+  opacity: 1;
 }
 
 .left-col-prj .prv-butt-3 {
@@ -600,14 +656,13 @@ height: 100%;
 }
 
 
-
 @media only screen and (max-width: 767px) {
 
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
+  overflow: visible;
 }
-
 
 .blank {
   display: none;
@@ -634,7 +689,7 @@ height: 100%;
   font-size: 1.8rem;
 }
   
-.button-list-prj {
+.prj-descr {
   padding-top: 2vh;
 }
 
