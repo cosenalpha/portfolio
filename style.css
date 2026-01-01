@@ -314,21 +314,21 @@ header {
   height: 90vh;
   display: flex;
   justify-content: center;
-  /* border: 1px solid yellow; */
+  border: 1px solid yellow;
 }
 
 .centre-col {
   padding-top: 9vh;
-  /* border: 1px solid green; */
+  border: 1px solid green;
   overflow-y: scroll;
-  height: 100%;
-  justify-content: center;
-
+  align-items: center;
+  display: flex;
+  height: 90vh;
 }
 
 .right-col {
-  /* border: 1px solid blue; */
-  height: 93vh;
+  border: 1px solid blue;
+  height: 90vh;
   padding-left: 1.5vw;
 }
 
@@ -352,19 +352,13 @@ header {
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ CONTACTS @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 #contacts-content {
-  padding: 20% 0;
-  margin: 0;
-  height: 100%;
-  /* display: grid; */
+  width: 100%;
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ PROJECT LIST @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 #prj-list {
- /* border: 1px solid green; */
-  padding: 17% 0;
-  height: min-content;
-  /* display: grid; */
+ width: 100%;
 }
 
 #hide-prj {
@@ -375,6 +369,7 @@ header {
   height: min-content;
   display: flex;
   padding: 10px;
+  width: 100%;
   margin: 0;
   border-top: 1px solid #FFF;
   text-transform: uppercase;
@@ -388,7 +383,7 @@ header {
 }
 
 #filter-list {
-  /* border: 1px solid pink; */
+  border: 1px solid pink;
   font-size: 0.7rem;
   width: 100%;
 }
@@ -512,7 +507,7 @@ header {
 
 
 .left-col-prj {
-  padding-top: 9vh;
+  padding-top: 5vh;
   padding-right: 1vw;
   height: 100%;
   justify-content: space-between;
@@ -521,12 +516,19 @@ header {
 }
 
 .right-col-prj {
-  padding-top: 9vh;
+  padding-top: 5vh;
   padding-left: 1vw;
   height: 100%;
   justify-content: space-between;
   flex-direction: column;
   display: flex;
+}
+
+.centre-col-prj {
+  padding-top: 5vh;
+  overflow-y: scroll;
+  align-items: center;
+  height: 90vh;
 }
 
 
@@ -664,6 +666,9 @@ header {
   overflow: visible;
 }
 
+.left-col {
+  display: none;
+}
 .blank {
   display: none;
 }
@@ -695,6 +700,10 @@ header {
 
 .centre-col {
  padding: 2vh 0;
+}
+
+#filter-list {
+ display: none;
 }
 
 }
