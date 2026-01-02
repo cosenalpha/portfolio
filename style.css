@@ -631,14 +631,14 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* border: 1px solid white;
-  border-top: 10px solid white; */
+  /* border: 1px solid white; */
 }
 
 .video-box {
   display: block;
   width: 100%;
   height: 51vh;
+
 }
 
 .prj-text {
@@ -648,6 +648,7 @@ footer {
 }
 
 .single-img {
+  width: 100%;
   border: 0.2px solid #616161;
 }
 
@@ -687,6 +688,7 @@ body {
 
 header {
   padding-top: 2vh;
+  background-color: #060606;
 }
 
 footer {
@@ -748,17 +750,15 @@ footer {
 }
 
 .left-col-prj {
-  padding-top: 2vh;
   padding-bottom: 2vh;
   height: min-content;
   width: 100%;
 }
 
 .centre-col-prj {
-    margin: 0;
-
+  margin: 0;
   height: max-content;
-  padding: 0 0 5vh 0;
+  padding: 0 0 7vh 0;
   overflow-y: hidden;
   width: 100%;
 }
@@ -780,10 +780,9 @@ footer {
   font-weight: 400;
   line-height: normal;
   font-size: 1.8rem;
+
   display: flex;
   align-items: baseline;
-
-  
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -797,7 +796,7 @@ footer {
 #desc-button {
   text-align: right;
   display: flex;
- padding: 0;
+  padding: 0;
   justify-content: flex-end;
   display: flex;
   text-align: right;
