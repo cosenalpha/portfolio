@@ -180,6 +180,7 @@ html, body {
   background-color: #060606;
   color: white;
   cursor: crosshair;
+  padding: 0;
 }
 
 body {
@@ -271,6 +272,10 @@ header {
   vertical-align: middle;
 }
 
+.blank {
+  height: 1px;
+}
+
 .header-butt {
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
@@ -292,7 +297,7 @@ header {
 }
 
 #butt-3 {
-    text-align: right;
+  text-align: right;
 
 }
 
@@ -305,7 +310,7 @@ header {
   font-size: 0.7rem;
   font-weight: 400;
   /* border: 1px solid green; */
-  height: 93vh;
+  height: 92vh;
 }
 
 .left-col {
@@ -343,7 +348,6 @@ header {
 .font-change:hover {
   color: white;
 }
-
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ CONTACTS @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
@@ -390,7 +394,6 @@ header {
 }
 
 .side-text {
-  opacity: 40%;
   padding-bottom: 0.25rem;
   font-size: 0.7rem;
   width: 100%;
@@ -466,16 +469,15 @@ header {
 .abt-title {
   color: white;
   font-weight: 500;
-  opacity: 1;
 }
 
 .abt-date {
-  color: #616161
+  color: #616161;
 }
 
 .abt-text {
   color: #BABABA;
-    font-weight: 300;
+  font-weight: 300;
 
 }
 
@@ -502,6 +504,12 @@ header {
   padding-left: 1vw;
 }
 
+.prj-scroll {
+  display: flex;
+  height: 100%;
+  padding-right: 0;
+}
+
 /* @@@@@@@@@@@@@@ LAYOUT @@@@@@@@@@@@@@ */
 
 
@@ -518,16 +526,17 @@ header {
   padding-top: 5vh;
   padding-left: 1vw;
   height: 100%;
+  width: 33.3333%;
   justify-content: space-between;
   flex-direction: column;
   display: flex;
 }
 
 .centre-col-prj {
-  padding-top: 5vh;
+  margin-top: 5vh;
+  width: 66.6666%;
   overflow-y: scroll;
   align-items: center;
-  height: 90vh;
 }
 
 
@@ -549,8 +558,7 @@ header {
 .specs-title {
   display: block;
   padding: 10px;
-  color: white;
-  opacity: 40%;
+  color: #616161;
   text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
@@ -566,6 +574,45 @@ header {
 
 /* @@@@@@@@@@@@@@ PRJ CONTENT @@@@@@@@@@@@@@ */
 
+footer {
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 3vh;
+  padding: 0;
+  font-size: 0.6rem;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+.footer-butt {
+  color: #616161;
+  opacity: 100%;
+}
+
+.footer-butt:hover {
+  text-decoration: underline;
+  font-family: "Redaction 70";
+  font-style: italic;
+  color: white;
+}
+
+.nxt-butt {
+  padding: 0;
+  justify-content: flex-end;
+  display: flex;
+  text-align: right;
+}
+
+.prv-butt {
+  padding: 0;
+  text-align: left;
+  display: flex;
+}
+
 .mini-title {
   padding-top: 3vh;
   display: block;
@@ -578,26 +625,6 @@ header {
 
 .butt-1 {
   padding-top: 0;
-}
-
-.right-col-prj .nxt-butt-3 {
-  padding: 0;
-  justify-content: flex-end;
-  display: flex;
-}
-
-.nxt-butt-3:hover, .prv-butt-3:hover {
-  text-decoration: underline;
-  font-family: "Redaction 70";
-  font-style: italic;
-  color: white;
-  opacity: 1;
-}
-
-.left-col-prj .prv-butt-3 {
-  padding: 0;
-  text-align: left;
-  display: flex;
 }
 
 .vid-frame {
@@ -651,14 +678,55 @@ header {
 
 [class*="col-"] {
   width: 100%;
+  padding: 0;
 }
 
 body {
-  padding: 0 2vh;
+  padding: 0 2vh 14vh 2vh;
 }
 
 header {
   padding-top: 2vh;
+}
+
+footer {
+  display: none;
+}
+
+.footer-mobile {
+  display: flex;
+  text-transform: uppercase;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2vh 0 14vh 0;
+  font-size: 0.6rem;
+}
+
+.footer-butt {
+  width: 49%;
+  color: #616161;
+  padding: 0;
+}
+
+.footer-butt:hover {
+  text-decoration: underline;
+  font-family: "Redaction 70";
+  font-style: italic;
+  color: white;
+}
+
+.nxt-butt {
+  padding: 0;
+  justify-content: flex-end;
+  display: flex;
+  text-align: right;
+}
+
+.prv-butt {
+  padding: 0;
+  text-align: left;
+  display: flex;
 }
 
 .left-col {
@@ -674,6 +742,7 @@ header {
 }
 
 .prj-scroll {
+  display: block;
   overflow-y: scroll;
   height: 100%;
 }
@@ -685,6 +754,26 @@ header {
   width: 100%;
 }
 
+.centre-col-prj {
+    margin: 0;
+
+  height: max-content;
+  padding: 0 0 5vh 0;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.right-col-prj {
+  padding: 0;
+  height: min-content;
+  width: 100%;
+}
+
+.side-text-prj {
+  padding: 0;
+  height: min-content;
+}
+
 .prj-title {
   font-family: "Redaction 70";
   font-style: italic; 
@@ -693,9 +782,11 @@ header {
   font-size: 1.8rem;
   display: flex;
   align-items: baseline;
-  /* border: 1px solid pink; */
-  display: grid;
-  grid-template-columns: auto auto auto;
+
+  
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
   
 .prj-descr {
@@ -705,9 +796,11 @@ header {
 
 #desc-button {
   text-align: right;
-  display: block;
-  width: max-content;
-  /* border: 1px solid blue; */
+  display: flex;
+ padding: 0;
+  justify-content: flex-end;
+  display: flex;
+  text-align: right;
 }
 
 .opened-box {
@@ -720,13 +813,6 @@ header {
 
 .plus-active, .minus-active {
   display: block;
-}
-
-.centre-col-prj {
-  height: max-content;
-  padding-top: 0;
-  padding-bottom: 5vh;
-  overflow-y: hidden;
 }
 
 #filter-list {

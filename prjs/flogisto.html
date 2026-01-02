@@ -16,12 +16,10 @@
 
     <body>    
       <script src="../sketch.js"></script>
-      <style>
-      </style>
-      
+
   
-      <header>
-      <div class="row">      
+    <header>
+      <div class="row col-12">      
        <div class="col-1"><p class="header-butt" onclick="window.location.href='../projects.html'">selected works</p></div>
        <div class="col-2 blank"><br></div>
        <div class="col-1"><p class="header-butt" onclick="window.location.href='../about.html'">who's sarah? 𐔌՞ ܸ.ˬ.ܸ՞𐦯</p></div>
@@ -32,7 +30,8 @@
   
     <div class="row col-12 content">
     <div class="col-3 left-col-prj">
-    <span class="prj-title"><div>Flogisto<span class="date"> Sept 2022 / Feb 2023</span></div><span id="desc-button" onclick="openBb()"><svg id="plus" class="plus-active" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 11H20V13H13V20H11V13H4V11H11V4H13V11Z" fill="white"/></svg><svg id="minus" class="minus-inactive" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="11" width="16" height="2" fill="white"/></svg>
+    <span class="prj-title"><div>Flogisto<span class="date"> Sept 2022 / Feb 2023</span></div><span id="desc-button" onclick="openBb()"><svg id="plus" class="plus-active" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 16H11V14H13V16ZM11 14H9V12H11V14ZM15 14H13V12H15V14ZM9 12H7V10H9V12ZM17 12H15V10H17V12ZM7 10H5V8H7V10ZM19 10H17V8H19V10Z" fill="white"/></svg>
+    <svg id="minus" class="minus-inactive" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 8H11V10H13V8ZM11 10H9V12H11V10ZM15 10H13V12H15V10ZM9 12H7V14H9V12ZM17 12H15V14H17V12ZM7 14H5V16H7V14ZM19 14H17V16H19V14Z" fill="white"/></svg>
 </span></span>
 
           <div class="side-text-prj prj-descr">
@@ -40,6 +39,7 @@
     </div>
 
     <div class="col-9 prj-scroll">
+      
     <div class="col-6 centre-col-prj">
       <div class="video-box">
       <iframe class="vid-frame single-img" src="https://www.youtube.com/embed/ckGNKqrrgck?si=wfNldlUkeIJk1hS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>              
@@ -93,18 +93,21 @@
          <div class="specs-list"><div class="butt-2 specs-title">team members</div><div class="button-content">Giacomo Cincotti, Sarah Cosentino, Selene Garresio, Giorgia Maggiolini, Alessandra Palombelli, Bianca Maria Sforza</div></div>
         <div class="specs-list"><div class="butt-3 specs-title">tags</div><div class="button-content">Speculative design, interaction design</div></div>
     </div>        
-</div></div>
+</div>
+
+<div class="col-12 row footer-mobile ibm-plex-mono-light">     
+        <div class="prv-butt footer-butt" onclick="window.location.href='ripples.html'">previous project</div>
+        <div class="nxt-butt footer-butt" onclick="window.location.href='anthro.html'">next project</div></div>
+</div>
 
 </div>
   
 
-<footer>
-        <div class="row">      
-        <div class="col-3 prv-butt-3 specs-title">previous project</div>
-        <div class="col-6 blank"><br></div>
-    <div class="col-3 nxt-butt-3 specs-title">next project</div></div>
-
-
+<footer class="row col-12 ibm-plex-mono-light">
+        <div class="col-3 prv-butt footer-butt" onclick="window.location.href='ripples.html'">previous project</div>
+        <div class="col-6"><br></div>
+        <div class="col-3 nxt-butt footer-butt" onclick="window.location.href='anthro.html'">next project</div>
 </footer>
+
   </body>
 </html>
