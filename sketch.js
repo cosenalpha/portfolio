@@ -71,7 +71,7 @@ function overButton(overName) {
   } else if (overName == 5) {
     document.getElementById("netzeroImg").style.display = "block";
   } else if (overName == 6) {
-    document.getElementById("stadiaImg").style.display = "block";
+    document.getElementById("meatImg").style.display = "block";
   } else if (overName == 7) {
     document.getElementById("vakenImg").style.display = "block";
   } else if (overName == 8) {
