@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>\Projects</title>
+
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+    <script src="libraries/p5.min.js"></script>
+    <!-- <script src="libraries/p5.sound.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+
+    <body>    
+      <script src="../sketch.js"></script>
+
+  
+    <header>
+      <div class="row col-12">      
+       <div class="col-1"><p class="header-butt" onclick="window.location.href='../projects.html'">selected works</p></div>
+       <div class="col-2 blank"><br></div>
+       <div class="col-1"><p class="header-butt" onclick="window.location.href='../about.html'">who's sarah? 𐔌՞ ܸ.ˬ.ܸ՞𐦯</p></div>
+       <div class="col-6 blank"><br></div>
+       <div class="col-2"><p class="header-butt" id="butt-3" onclick="window.location.href='../contacts.html'">contacts</p></div>
+      </div>
+    </header>
+  
+    <div class="row col-12 content">
+    <div class="col-3 left-col-prj">
+    <span class="prj-title"><div>Anthropogenic Narratives<br><span class="date">Feb 2023 - Mar 2023</span></div><span id="desc-button" onclick="openBb()"><svg id="plus" class="plus-active" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 16H11V14H13V16ZM11 14H9V12H11V14ZM15 14H13V12H15V14ZM9 12H7V10H9V12ZM17 12H15V10H17V12ZM7 10H5V8H7V10ZM19 10H17V8H19V10Z" fill="white"/></svg>
+    <svg id="minus" class="minus-inactive" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 8H11V10H13V8ZM11 10H9V12H11V10ZM15 10H13V12H15V10ZM9 12H7V14H9V12ZM17 12H15V14H17V12ZM7 14H5V16H7V14ZM19 14H17V16H19V14Z" fill="white"/></svg>
+</span></span>
+
+          <div class="side-text-prj prj-descr">
+        Website for the one-day event and exhibition, 'Anthropogenic Narratives', which was held in March 2023 at Triennale Milano. The exhibition showcased projects designed during the Final Synthesis Studio Section 1 course (Bachelor's in Communication Design, Politecnico di Milano), led by Prof. Francesco E. Guida.</div>
+    </div>
+
+    <div class="col-9 prj-scroll">
+      
+    <div class="col-6 centre-col-prj">
+            <video class="single-img" src="../assets/anthropogenic/video.mp4" title="Anthropogenic Narratives" autoplay mute loop></iframe></video>
+
+          <div class="prj-text">Anthropogenic Narratives was an exhibition held at Triennale Milano, where non-human perspectives of eleven different natural elements were shown. Possible stories that aim to provoke and trigger reflections on the relationship between human beings and nature. The exhibition included eleven projects, design speculations that are not meant to give answers and certainties: their aim is to imagine new questions and reflect on contemporary and future times. <br><br>Other than getting the chance to show <a href="flogisto.html">my thesis project Flogisto</a> I worked on the organisation of the exhibition and, in particular, I was part of the Web design team.</div>
+            <video class="single-img" src="../assets/anthropogenic/video1.mp4" title="Anthropogenic Narratives" autoplay mute loop></iframe></video>
+
+        
+         <div class="mini-title">Website technical specs</div>
+        
+          <div class="prj-text">
+         The key visual chosen is called reaction-diffusion system, which is a mathematical model that shows the change in space and time of the concentration of chemical substances. In particular, it is often used to describe the emergence of periodic patterns on the surface of animal coat.
+      <div class="img-row" style="padding:2vh 0">
+              <img class="double-img" src="../assets/anthropogenic/anthro-1.png" width="1920" height="1080"></img>
+              <img class="double-img" src="../assets/anthropogenic/anthro-2.png" width="1920" height="1080"></img>         
+              <img class="double-img" src="../assets/anthropogenic/anthro-3.png" width="1920" height="1080"></img>              
+              <img class="double-img" src="../assets/anthropogenic/anthro-4.png" width="1920" height="1080"></img></div>
+
+         On the website, we recreated it with a p5.js sketch to which we applied a shader to make the outline effect (rather than a classic fill-in), accordingly to what we decided with the brand identity team. The whole website was designed and programmed from scratch with HTML, CSS and p5.js.</div>
+
+      <div class="img-row">
+              <img class="double-img" src="../assets/anthropogenic/anthro-5.png" width="1920" height="1080"></img>
+              <img class="double-img" src="../assets/anthropogenic/anthro-6.png" width="1920" height="1080"></img>  </div> 
+          
+
+      </div> 
+      <!-- fine colonna centrale -->
+  
+
+<div class="col-3 right-col-prj">
+    <div class="side-text-prj">
+         <div class="specs-list" style="border:none"><div class="butt-1 specs-title">my responsibilities</div><div class="button-content">Web design and development</div></div>
+         <div class="specs-list"><div class="butt-2 specs-title">web design team members</div><div class="button-content">Francesco Bonetti, Giuliana Concialini, Sarah Cosentino, Clara Di Bella, Agostino Sanna<br><br>(full team of the exhibition available on the website)</div></div>
+    <div class="specs-list"><div class="butt-2 specs-title">link</div><div class="button-content"><a href="http://anthropogenicnarratives.labsintesi-c1.info/">Website</a>  |  <a href="https://www.instagram.com/anthropogenicnarratives/">Instagram</a></div></div>
+  
+          <div class="specs-list"><div class="butt-3 specs-title">tags</div><div class="button-content">Speculative design, interaction design</div></div>
+</div></div>
+
+
+
+
+<div class="col-12 row footer-mobile">     
+        <div class="prv-butt footer-butt" onclick="window.location.href='flogisto.html'">previous project</div>
+        <div class="nxt-butt footer-butt" onclick="window.location.href='interdependence.html'">next project</div></div>
+</div>
+
+</div>
+  
+
+<footer class="row col-12">
+        <div class="col-3 prv-butt footer-butt" onclick="window.location.href='flogisto.html'">previous project</div>
+        <div class="col-6"><br></div>
+        <div class="col-3 nxt-butt footer-butt" onclick="window.location.href='interdependence.html'">next project</div>
+</footer>
+
+  </body>
+</html>

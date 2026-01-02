@@ -501,7 +501,7 @@ header {
   font-family: "IBM Plex Mono";
   font-style: normal;
   text-transform: none;
-  padding-left: 1vw;
+  /* padding-left: 1vw; */
 }
 
 .prj-scroll {
