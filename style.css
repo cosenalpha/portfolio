@@ -180,12 +180,11 @@ html, body {
   background-color: #060606;
   color: white;
   cursor: crosshair;
-  /* overflow-y: hidden; */
 }
 
 body {
   padding: 1.5vh 1vw;
-
+  overflow: hidden;
 }
 
 /* scroll bar */
@@ -314,12 +313,10 @@ header {
   height: 90vh;
   display: flex;
   justify-content: center;
-  border: 1px solid yellow;
 }
 
 .centre-col {
   padding-top: 9vh;
-  border: 1px solid green;
   overflow-y: scroll;
   align-items: center;
   display: flex;
@@ -327,7 +324,6 @@ header {
 }
 
 .right-col {
-  border: 1px solid blue;
   height: 90vh;
   padding-left: 1.5vw;
 }
@@ -383,7 +379,6 @@ header {
 }
 
 #filter-list {
-  border: 1px solid pink;
   font-size: 0.7rem;
   width: 100%;
 }
@@ -494,6 +489,10 @@ header {
   font-size: 1.6rem;
 }
 
+#desc-button {
+  display: none;
+}
+
 .date {
   color: #616161; 
   font-size: 0.7rem;
@@ -563,16 +562,6 @@ header {
 
 .prj-descr {
   padding-top: 2vh;
-}
-
-.opened-box {
-  display: block;
-  color: white;
-}
-
-.active-button {
-  color: white;
-  opacity: 100%;
 }
 
 /* @@@@@@@@@@@@@@ PRJ CONTENT @@@@@@@@@@@@@@ */
@@ -658,32 +647,42 @@ header {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
 
-/* For mobile phones: */
 [class*="col-"] {
   width: 100%;
-  overflow: visible;
+}
+
+body {
+  padding: 0 2vh;
+}
+
+header {
+  padding-top: 2vh;
 }
 
 .left-col {
   display: none;
 }
+
 .blank {
   display: none;
 }
 
-.header-butt {
-  text-align: left;
-  padding: 0.3vh 0;
+#butt-3 {
+  text-align: left;  
 }
 
-#butt-3 {
-    text-align: left;
+.prj-scroll {
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .left-col-prj {
   padding-top: 2vh;
+  padding-bottom: 2vh;
+  height: min-content;
+  width: 100%;
 }
 
 .prj-title {
@@ -692,14 +691,42 @@ header {
   font-weight: 400;
   line-height: normal;
   font-size: 1.8rem;
+  display: flex;
+  align-items: baseline;
+  /* border: 1px solid pink; */
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
   
 .prj-descr {
   padding-top: 2vh;
+  display: none;
 }
 
-.centre-col {
- padding: 2vh 0;
+#desc-button {
+  text-align: right;
+  display: block;
+  width: max-content;
+  /* border: 1px solid blue; */
+}
+
+.opened-box {
+  display: block;
+}
+
+.plus-inactive, .minus-inactive {
+  display: none;
+}
+
+.plus-active, .minus-active {
+  display: block;
+}
+
+.centre-col-prj {
+  height: max-content;
+  padding-top: 0;
+  padding-bottom: 5vh;
+  overflow-y: hidden;
 }
 
 #filter-list {

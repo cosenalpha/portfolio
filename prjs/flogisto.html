@@ -14,35 +14,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
 
-  <body>
     <body>    
       <script src="../sketch.js"></script>
       <style>
-        body {
-          overflow: hidden;
-        }
       </style>
       
   
       <header>
       <div class="row">      
        <div class="col-1"><p class="header-butt" onclick="window.location.href='../projects.html'">selected works</p></div>
-       <div class="col-2"><br></div>
+       <div class="col-2 blank"><br></div>
        <div class="col-1"><p class="header-butt" onclick="window.location.href='../about.html'">who's sarah? 𐔌՞ ܸ.ˬ.ܸ՞𐦯</p></div>
-       <div class="col-6"><br></div>
-       <div class="col-2"><p class="header-butt" style="text-align: right;" onclick="window.location.href='../contacts.html'">contacts</p></div>
+       <div class="col-6 blank"><br></div>
+       <div class="col-2"><p class="header-butt" id="butt-3" onclick="window.location.href='../contacts.html'">contacts</p></div>
       </div>
     </header>
   
     <div class="row col-12 content">
     <div class="col-3 left-col-prj">
-    <span class="prj-title">Flogisto<span class="date"> Sept 2022 / Feb 2023</span></span>
+    <span class="prj-title"><div>Flogisto<span class="date"> Sept 2022 / Feb 2023</span></div><span id="desc-button" onclick="openBb()"><svg id="plus" class="plus-active" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 11H20V13H13V20H11V13H4V11H11V4H13V11Z" fill="white"/></svg><svg id="minus" class="minus-inactive" width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="11" width="16" height="2" fill="white"/></svg>
+</span></span>
+
           <div class="side-text-prj prj-descr">
         A speculative design project set in 2070, in a world where the human race has almost ran out of fossil fuel and the energetic crisis has worsened the economic gap. Flogisto is a new service offered by the company Ash, a multinational corporation that has been in the power generation business since 2050 and has found a new way to produce energy: by burning dead bodies.</div>
-        <div class="prv-butt-3 specs-title">previous project</div>
-
     </div>
 
+    <div class="col-9 prj-scroll">
     <div class="col-6 centre-col-prj">
       <div class="video-box">
       <iframe class="vid-frame single-img" src="https://www.youtube.com/embed/ckGNKqrrgck?si=wfNldlUkeIJk1hS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>              
@@ -96,10 +93,18 @@
          <div class="specs-list"><div class="butt-2 specs-title">team members</div><div class="button-content">Giacomo Cincotti, Sarah Cosentino, Selene Garresio, Giorgia Maggiolini, Alessandra Palombelli, Bianca Maria Sforza</div></div>
         <div class="specs-list"><div class="butt-3 specs-title">tags</div><div class="button-content">Speculative design, interaction design</div></div>
     </div>        
-    <div class="nxt-butt-3 specs-title">next project</div>
-</div>
+</div></div>
 
 </div>
   
+
+<footer>
+        <div class="row">      
+        <div class="col-3 prv-butt-3 specs-title">previous project</div>
+        <div class="col-6 blank"><br></div>
+    <div class="col-3 nxt-butt-3 specs-title">next project</div></div>
+
+
+</footer>
   </body>
 </html>

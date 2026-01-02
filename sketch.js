@@ -103,3 +103,18 @@ function openBox(boxN) {
   document.getElementById(buttonName).classList.toggle("active-button");
 
 }
+
+function openBb() {
+    let description = document.querySelector('.prj-descr');
+    let plus = document.getElementById('plus');
+    let minus = document.getElementById('minus');
+
+    description.classList.toggle("opened-box");
+    plus.classList.toggle("plus-active");
+    plus.classList.toggle("plus-inactive");
+    minus.classList.toggle("minus-active");
+    minus.classList.toggle("minus-inactive");
+
+  
+    console.log("Wow");
+}
