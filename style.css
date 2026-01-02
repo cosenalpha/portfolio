@@ -349,6 +349,10 @@ header {
   color: white;
 }
 
+#see-projects:hover {
+ text-decoration: underline;
+}
+
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ CONTACTS @@@@@@@@@@@@@@@@@@@@@@@@@ */
 
 #contacts-content {
@@ -478,7 +482,6 @@ header {
 .abt-text {
   color: #BABABA;
   font-weight: 300;
-
 }
 
 /* @@@@@@@@@@@@@@@@@@@@@@@@@ PROJECT PAGES @@@@@@@@@@@@@@@@@@@@@@@@@ */
