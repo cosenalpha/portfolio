@@ -42,47 +42,30 @@
       
     <div class="col-6 centre-col-prj">
       <div class="video-box">
-      <iframe class="vid-frame single-img" src="https://www.youtube.com/embed/ckGNKqrrgck?si=wfNldlUkeIJk1hS6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>              
-          <div class="prj-text">Global warming and climate change have marked this century and forced us to rethink and adapt much of our lives. In 2070, due to the depletion of fossil fuels, energy is a commodity for the few and its price is skyrocketing.<br><br>
+      <iframe class="vid-frame single-img" src="https://www.youtube.com/embed/cl0qYZRHx7M?si=7elx9rIcdFuWJSID&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>              
+          <div class="prj-text">Ripples: Voices of the Lagoon is an interactive installation that explores ecological justice through a more-than-human lens. Set in a speculative future of the Venetian Lagoon, the installation invites visitors to participate in a shared governance scenario with non-human entities such as salt marshes, mollusks, and even the MOSE infrastructure. By translating weight shifts into audiovisual disturbances, Ripples offers a multisensory experience of imbalance and environmental negotiation.<br><br>
+          </div>
+       <img class="single-img" src="../assets/ripples/ripples-1.png"></img>
 
-          Ash is an energy company founded in 2045 in response to a constantly changing world. After 40 years of experience and research, it is the first company in the world to be able to provide effective and definitive solutions to the energy crisis.</div>
-          <video autoplay muted loop class="single-img"><source src="../assets/flogisto/palazzi.mp4" type="video/mp4"></video>  
 
-         <div class="prj-text">Flogisto is a service that allows everyone to earn money from the combustion of their body.          Users who decide to join the service receive a financial reward based on the amount of energy that can be generated from burning their bodies.<br><br>Ash provides a dedicated measuring device that allows users to know their energy value and, consequently, their economic value. The evaluation process, that takes into account height, body mass, fat mass, hydration and alcohol level, gives out a receipt with the user's energetic value.</div>
+         <div class="prj-text">The Venice Lagoon is a dynamic ecosystem shaped by different entities. In response to increasing floods, the MOSE flood barrier system was constructed to protect human settlements. While effective in blocking high tides, MOSE has unintentionally disrupted the lagoon’s natural hydrodynamics, reducing sediment circulation and threatening the survival of salt marshes and species like seahorses that rely on them.<br><br>Prioritizing human safety and urban preservation at the expense of ecological balance, the MOSE system exemplifies an anthropocentric approach to environmental control. In response to the limitations of human-centered decision-making, Ripples explores the possibility of a multi-species governance model, a system in which both human and nonhuman entities are considered stakeholders in the ecological future of the lagoon.</div>
          
-         <div class="img-row" id="img-strane">
-           <video autoplay muted loop class="double-img"><source src="../assets/flogisto/packaging.mp4" type="video/mp4"></video><img class="double-img" src="../assets/flogisto/scontrino.png"></img>
-         </div>
+      
 
-         <div class="prj-text">Following the initial evaluation, customers will be given the option to choose whether they are satisfied with their energy and, consequently, economic value. If so, they will sign a contract specifying how long they wish to live, ranging from one month to seven years. Their reward will then be paid in equal monthly instalments until their death. In order to receive their reward, the customer is required to maintain their initial energetic value.</div>
-       <div class="img-row">
-                <video autoplay muted loop class="double-img"><source src="../assets/flogisto/cavo.mp4" type="video/mp4"></video>
-                <video autoplay muted loop class="double-img"><source src="../assets/flogisto/piedini.mp4" type="video/mp4"></video>
-                <video autoplay muted loop class="double-img"><source src="../assets/flogisto/alcol.mp4" type="video/mp4"></video>
-                <video autoplay muted loop class="double-img"><source src="../assets/flogisto/stampante.mp4" type="video/mp4"></video>
-         </div>
-          <div class="prj-text">
-          The evaluation device is present in store and connects to the personal area of the individual customer, which allows them to always be able to track their progress to ensure a smooth end of life. Ash even proposes a range of pre- and post-mortem solutions that are part of the service, including a credit card to pay for the service itself, an obituary and an urn for the deceased.<br><br>Flogisto presents itself as a double solution: on the one hand it gives value to its users, on the other hand it helps society in the energy transition by providing a new fuel.
-         </div>
+      <div class="mini-title">The experience</div>
+         <div class="prj-text">The installation invites the audience to redistribute pebbles among the five entities of the lagoon, simulating an act of ecological decision-making and negotiating privilege, attention and balance across species.<br><br>Each choice made by a participant is translated into visual and auditory feedback. The clearer an entity’s voice and the brighter its form, the more it has received. The less an entity receives, the more it fades into distortion and noise.</div>
+
        <div class="img-row">
               <img class="double-img" src="../assets/flogisto/fire-7.jpg" width="1920" height="1080"></img>
               <img class="double-img" src="../assets/flogisto/fire-8.jpg" width="1920" height="1080"></img>         
               <img class="double-img" src="../assets/flogisto/fire-6.jpg" width="1920" height="1080"></img>              
               <img class="double-img" src="../assets/flogisto/fire-9.jpg" width="1920" height="1080"></img></div>
          
-         <div class="mini-title">The device development</div>
-           <div class="prj-text">The evaluation device is programmed with Arduino (C++) and Javascript (mainly p5.js) and connects to a computer. The computer and Arduino UNO (the microcontroller that runs the device) communicate through the serial port. P5.js uses the library p5.serialcontrol to send data to Arduino, and the reception of the string triggers the printing function.</div>
-           <img class="single-img" style="padding:2%" src="../assets/flogisto/fire-device-1.png"></img>
-           <div class="prj-text">The evaluation process, that takes into account height, body mass, fat mass, hydration and alcohol level, gives out a receipt with the user's energetic value. Weight and alcohol level are measured by sensors connected to Arduino; height is set by the user through a slider; fat mass and hydration are calculated through the Jackson-Pollock formula and Watson's formula.</div>
-           <img class="single-img" style="padding:3%;margin:1vh 0;"  src="../assets/flogisto/fire-device-2.png"></img>
-           <div class="prj-text">While these values are being measured, the computer camera uses a face recognition API to approximate the gender and age of the user (with a percentage margin of error).<br>These values are then used in combination with the weight to calculate the user's fat mass and hydration levels.</div>
-           <img class="single-img" style="padding:3%;margin:1vh 0;" src="../assets/flogisto/fire-device-3.png"></img>
-           <img class="single-img" style="padding:2%;margin:1vh 0;" src="../assets/flogisto/fire-device-4.png"></img>
-           <img class="single-img" style="margin:1vh 0;" src="../assets/flogisto/fire-device-5.png"></img>
-       <div class="img-row">
-           <img class="single-img" src="../assets/flogisto/fire-device-6.png"></img>
-           <img class="single-img" src="../assets/flogisto/fire-device-7.png"></img>
-       </div>
+         <div class="mini-title">The installation development</div>
+           <div class="prj-text">Each totem includes a screen and a speaker that display the corresponding entity’s video and sound. Additionally, a scale with a limited number of rocks symbolizes the privileges and resources available for distribution among the lagoon’s entities. Visitors interact by moving these rocks between totems, affecting both the visibility and audibility of each entity—making them more or less perceivable based on the resources they receive.<br><br>
+This reflects the real issue in the Venice Lagoon, where resources are scarce and often allocated primarily to humans, leaving other entities struggling to survive..</div>
+
+
       </div> 
       <!-- fine colonna centrale -->
   
@@ -96,17 +79,17 @@
 </div>
 
 <div class="col-12 row footer-mobile">     
-        <div class="prv-butt footer-butt" onclick="window.location.href='ripples.html'">previous project</div>
-        <div class="nxt-butt footer-butt" onclick="window.location.href='anthro.html'">next project</div></div>
+        <div class="prv-butt footer-butt" onclick="window.location.href='meat.html'">previous project</div>
+        <div class="nxt-butt footer-butt" onclick="window.location.href='flogisto.html'">next project</div></div>
 </div>
 
 </div>
   
 
 <footer class="row col-12">
-        <div class="col-3 prv-butt footer-butt" onclick="window.location.href='ripples.html'">previous project</div>
+        <div class="col-3 prv-butt footer-butt" onclick="window.location.href='meat.html'">previous project</div>
         <div class="col-6"><br></div>
-        <div class="col-3 nxt-butt footer-butt" onclick="window.location.href='anthro.html'">next project</div>
+        <div class="col-3 nxt-butt footer-butt" onclick="window.location.href='flogisto.html'">next project</div>
 </footer>
 
   </body>
