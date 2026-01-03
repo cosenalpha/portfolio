@@ -342,14 +342,18 @@ header {
 .font-change {
   font-family: "Redaction 70";
   font-style: italic;
-  color:#616161;
+  color:white;
+  opacity: 40%
 }
 
 .font-change:hover {
-  color: white;
+    opacity: 80%;
+
 }
 
 #see-projects:hover {
+  opacity: 100%;
+
  text-decoration: underline;
 }
 
