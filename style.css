@@ -343,7 +343,7 @@ header {
   font-family: "Redaction 70";
   font-style: italic;
   color:white;
-  opacity: 40%
+  opacity: 40%;
 }
 
 .font-change:hover {
@@ -519,15 +519,20 @@ header {
 
 a {
   color: white;
-    opacity: 40%;
+    opacity: 80%;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  opacity: 80%;
-}
+  opacity: 100%;
+font-family: "Redaction 70";
+  font-style: italic;
+  color:white;
+  text-transform: uppercase;
+    font-size: 0.7rem;
 
+}
 
 /* @@@@@@@@@@@@@@ LAYOUT @@@@@@@@@@@@@@ */
 
