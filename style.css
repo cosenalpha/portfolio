@@ -718,7 +718,7 @@ footer {
 }
 
 body {
-  padding: 0 2vh 14vh 2vh;
+  padding: 0 2vh 2vh 2vh;
 }
 
 header {
@@ -736,7 +736,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 2vh 0 0 0;
-  margin-bottom: 30vh;
+  margin-bottom: 5vh;
+  bottom: env(safe-area-inset-bottom, 5px);
 
 
   line-height: normal;
@@ -750,7 +751,6 @@ footer {
 
 .content {
     padding-top: 2vh;
-    height: 95vh;
 }
 
 .footer-butt {
