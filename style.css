@@ -740,8 +740,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 2vh 0 0 0;
-  margin-bottom: 5vh;
-  bottom: env(safe-area-inset-bottom, 5px);
+  margin-bottom: 10vh;
+  bottom: env(safe-area-inset-bottom, 10vh);
 
 
   line-height: normal;
