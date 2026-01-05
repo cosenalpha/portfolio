@@ -743,7 +743,6 @@ footer {
   margin-bottom: 10vh;
   bottom: env(safe-area-inset-bottom, 10vh);
 
-
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
   font-size: 0.7rem;
