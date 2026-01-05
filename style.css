@@ -798,7 +798,7 @@ footer {
 position:absolute;  opacity: 50%;
 display: block;
 padding-bottom: 2vh;
-  bottom: 0;
+  bottom: env(safe-area-inset-bottom, 5vh);
 color:#616161;
   font-family: "Redaction 70";
   font-style: italic; 
