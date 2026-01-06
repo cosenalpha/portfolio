@@ -722,7 +722,7 @@ footer {
 }
 
 body {
-  padding: 0 2vh 2vh 2vh;
+  padding: 0 2vh 0 2vh;
 }
 
 header {
@@ -739,9 +739,9 @@ footer {
   text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
-  padding: 2vh 0 0 0;
-  padding-bottom: 10vh;
-  bottom: env(safe-area-inset-bottom, 10vh);
+ padding: 1vh 0 3vh 0;
+  /* margin-bottom: 10vh; */
+  bottom: env(safe-area-inset-bottom, 0px);
 
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
@@ -749,11 +749,11 @@ footer {
   font-weight: 400;
   color:#616161;
   width: 100%;
-  height: 3vh;
+  height: min-content;
 }
 
 .content {
-    padding-top: 2vh;
+   overflow-y: scroll;
 }
 
 .footer-butt {
@@ -810,21 +810,22 @@ color:#616161;
 
 .prj-scroll {
   display: block;
-  overflow-y: scroll;
-  height: 90%;
-  bottom: env(safe-area-inset-bottom, 0px);
+  /* overflow-y: scroll; */
+  max-height: 90%;
 }
 
 .left-col-prj {
-  padding-bottom: 2vh;
+      padding: 2vh 3vh 2vh 0;
+  position: fixed;
+background-color: #060606;
   height: min-content;
-  width: 100%;
+  width: 98vw;
 }
 
 .centre-col-prj {
   margin: 0;
   height: max-content;
-  padding: 0 0 7vh 0;
+  padding: 0 0 4vh 0;
   overflow-y: hidden;
   width: 100%;
 }
@@ -852,6 +853,7 @@ color:#616161;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: min-content;
 }
   
 .prj-descr {
@@ -861,7 +863,7 @@ color:#616161;
 
 #desc-button {
   text-align: right;
-  display: flex;
+  width: fit-content;
   padding: 0;
   justify-content: flex-end;
   display: flex;
@@ -869,7 +871,7 @@ color:#616161;
 }
 
 .opened-box {
-  display: block;
+  display:flex;
 }
 
 .plus-inactive, .minus-inactive {

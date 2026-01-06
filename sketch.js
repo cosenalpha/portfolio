@@ -115,6 +115,4 @@ function openBb() {
     minus.classList.toggle("minus-active");
     minus.classList.toggle("minus-inactive");
 
-  
-    console.log("Wow");
 }
