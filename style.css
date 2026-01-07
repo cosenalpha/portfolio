@@ -277,6 +277,10 @@ header {
   height: 1px;
 }
 
+.counterblank {
+  display: none;
+}
+
 .header-butt {
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
@@ -739,9 +743,10 @@ footer {
   text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
- padding: 1vh 0 10vh 0;
-  /* margin-bottom: 10vh; */
-  bottom: env(safe-area-inset-bottom, 0px);
+  padding: 1vh 0 0 0;
+  /* margin-bottom: auto; */
+  bottom: 0;
+  position: relative;
 
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
@@ -753,7 +758,8 @@ footer {
 }
 
 .content {
-   overflow-y: scroll;
+  overflow-x: hidden;
+   /* overflow-y: scroll; */
 }
 
 .footer-butt {
@@ -790,12 +796,17 @@ footer {
   display: none;
 }
 
+.counterblank {
+  display: block;
+}
+
 #butt-3 {
   text-align: left;  
 }
 
 #testo-mobile {
-position:absolute;  opacity: 50%;
+position:absolute;
+opacity: 50%;
 display: block;
 padding-bottom: 2vh;
   bottom: env(safe-area-inset-bottom, 5vh);
@@ -810,20 +821,34 @@ color:#616161;
 
 .prj-scroll {
   display: block;
-  /* overflow-y: scroll; */
-  max-height: 90%;
+  overflow-y: scroll;
+  height: 100%;
+  padding-bottom: 7vh;
+  bottom: 0;
+  /* border: 1px solid red; */
+  /* min-height: 80%;
+  max-height: 90%; */
 }
 
 .left-col-prj {
-      padding: 2vh 3vh 2vh 0;
-  position: fixed;
-background-color: #060606;
+  overflow-y: hidden;
+
+  padding: 2vh 3vh 2vh 0;
+  position: static;
+  /* background-color: #060606; */
+  display: block;
   height: min-content;
   width: 98vw;
 }
 
 .centre-col-prj {
   margin: 0;
+  
+  /* border: 1px solid green;
+  background-color: orange; */
+  display: block;
+
+  /* margin-top: 100px; */
   height: max-content;
   padding: 0 0 4vh 0;
   overflow-y: hidden;

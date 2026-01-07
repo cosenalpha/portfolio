@@ -1,5 +1,11 @@
-// @@@@@@@@@@@@@@@@@@@ FUNZIONE FILTRO LISTA PROGETTI @@@@@@@@@@@@@@@@@@@
+// FUNZIONE DIMENZIONI GIUSTE
+function funzione() {
+  let barra = document.getElementsByClassName('left-col-prj');
+  console.log(barra.height);
+}
 
+
+// @@@@@@@@@@@@@@@@@@@ FUNZIONE FILTRO LISTA PROGETTI @@@@@@@@@@@@@@@@@@@
 let typeOld = [];
 
 function filter(type) {
@@ -57,6 +63,8 @@ function clearFilter() {
     typeOld = [];
 }
 
+
+// FUNZIONE IMMAGINI ALL'OVER
 function overButton(overName) {
   if (overName==1) {
     document.getElementById("ripplesImg").style.display = "block";
@@ -104,6 +112,8 @@ function openBox(boxN) {
 
 }
 
+
+// FUNZIONE APERTURA BOX DESCRIZIONE PROGETTI
 function openBb() {
     let description = document.querySelector('.prj-descr');
     let plus = document.getElementById('plus');
@@ -114,5 +124,4 @@ function openBb() {
     plus.classList.toggle("plus-inactive");
     minus.classList.toggle("minus-active");
     minus.classList.toggle("minus-inactive");
-
 }
