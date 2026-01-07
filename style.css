@@ -739,8 +739,7 @@ footer {
   text-transform: uppercase;
   justify-content: space-between;
   align-items: center;
-  padding: 1vh 0 0 0;
-  /* margin-bottom: auto; */
+  padding: 1vh 0 3vh 0;
   bottom: 0;
   position: relative;
 
