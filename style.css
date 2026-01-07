@@ -277,10 +277,6 @@ header {
   height: 1px;
 }
 
-.counterblank {
-  display: none;
-}
-
 .header-butt {
   line-height: normal;
   font-family: "IBM Plex Mono", serif;
@@ -794,10 +790,6 @@ footer {
 
 .blank {
   display: none;
-}
-
-.counterblank {
-  display: block;
 }
 
 #butt-3 {
